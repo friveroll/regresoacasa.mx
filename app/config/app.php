@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'cHrv39dTTTYWuE9ue00TqbHgSqVr4MIj',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -112,6 +112,10 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		/* Additional Providers */
+		'Toddish\Verify\VerifyServiceProvider',
+		'ExpressiveDateServiceProvider', // Expresive Date
+		'Way\Generators\GeneratorsServiceProvider', // Generators
 
 	),
 

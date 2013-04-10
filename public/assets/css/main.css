@@ -1,0 +1,78 @@
+.fuelux body {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background-image: url(../img/leather_1.png);
+  font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 979px) {
+  .fuelux body {
+    padding-top: 0;
+  }
+}
+.fuelux header {
+  border: 1px solid #C79A6D;
+  border-radius: 6px 6px 6px 6px;
+  height: 150px;
+  background-image: linear-gradient(bottom, #f2a649 32%, #f2c083 66%, #f2dabd 83%);
+  background-image: -o-linear-gradient(bottom, #f2a649 32%, #f2c083 66%, #f2dabd 83%);
+  background-image: -moz-linear-gradient(bottom, #f2a649 32%, #f2c083 66%, #f2dabd 83%);
+  background-image: -webkit-linear-gradient(bottom, #f2a649 32%, #f2c083 66%, #f2dabd 83%);
+  background-image: -ms-linear-gradient(bottom, #f2a649 32%, #f2c083 66%, #f2dabd 83%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.32, #f2a649), color-stop(0.66, #f2c083), color-stop(0.83, #f2dabd));
+}
+.fuelux header div img.pull-left {
+  margin-left: 20px;
+  max-width: 138px;
+  width: auto;
+  max-height: 150px;
+  height: auto;
+}
+.fuelux header div img.pull-right {
+  margin-right: 20px;
+}
+.fuelux header div h1 {
+  padding-top: 60px;
+  text-align: center;
+}
+.fuelux .group:before,
+.fuelux .group:after {
+  content: "";
+  display: table;
+}
+.fuelux .group:after {
+  clear: both;
+}
+.fuelux .group {
+  zoom: 1;
+}
+.fuelux label.valid {
+  width: 24px;
+  height: 24px;
+  background: url(../img/Done.png) center center no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+}
+.fuelux label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+@font-face {
+  font-family: 'Croissant One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Croissant One'), local('CroissantOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/croissantone/v1/mPjsOObnC77fp1cvZlOfIfn8qdNnd5eCmWXua5W-n7c.woff) format('woff');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Muli Light'), local('Muli-Light'), url(http://themes.googleusercontent.com/static/fonts/muli/v4/_fUwxgthNvUM9WCtMyMvbA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
