@@ -61,7 +61,7 @@ class UserController extends BaseController {
 
 		$rules = array('first_name' => 'required|min:4|max:24',
 		               'last_name' => 'required|min:4|max:24',
-		               'username' => 'required|unique:users|min:6|max:10',
+		               'username' => 'required|unique:users|min:4|max:10',
 		               'email' => 'required|min:4|max:32|email',
 		               'password' => 'required|min:6|confirmed',
 		               'password_confirmation' => 'required',
@@ -96,8 +96,121 @@ class UserController extends BaseController {
 			$this->profile->user_id = $user->getID();
 			$this->profile->save();
 
-			var_dump($user);
+			
+			//Get the activation code & prep data for email
+			$data['activationCode'] = $user->GetActivationCode();
+			$data['email'] = $input['email'];
+			$data['userId'] = $user->getId();
+
+			//send email with link to activate.
+			Mail::send('emails.auth.welcome', $data, function($m) use($data)
+			{
+			    $m->to($data['email'])->subject('Bienvenido a Regreso a Casa');
+			});
+
+			//success!
+	    	Session::flash('success', 'Su cuenta ha sido creada revise su correo, para el link de confirmaci&oacute;n.');
+	    	return Redirect::to('/');
 		}
 
 	}
-}
+
+	public function getActivacion($userId, $activationCode)
+	{
+		//$user = Sentry::getUserProvider()->findById($userId);
+		try{
+			$user = User::find($userId);
+		    
+		    if ($user->attemptActivation($activationCode))
+		    {
+		        // User activation passed
+		        
+		    	//Add this person to the user group.
+		    	 
+		    	$this->rol = new RolUsuario(array('user_id' => $userId,
+		    				                'role_id' => 2 ));
+		    	$this->rol->save();
+
+
+		        Session::flash('success', 'Su cuenta ha sido activada. <a href="/usuario/ingresar">Entrar</a>.');
+				return Redirect::to('/');
+		    }
+		    else
+		    {
+		        // User activation failed
+		        Session::flash('error', 'Existe un problema de activaci&oacute;n con su cuenta. Por favor contacte al administrador.');
+				return Redirect::to('/');
+		    }
+	    }
+	    catch (UserAlreadyActivatedException $e)
+	    {
+	    	Session::flash('error', 'Su cuenta ya ha sido activada');
+	    	return Redirect::to('/');
+	    }
+
+	}
+
+	public function getEntrar()
+	{
+		# code...
+	}
+
+	public function postEntrar()
+	{
+		# code...
+	}
+
+	public function getExiste($username = null)
+	{
+		if (Request::ajax())
+		{
+    		if (User::username($username) == $username)
+    		{
+				$exists = true;
+			} else {
+				$exists = false;
+			}
+			return Response::json($exists);
+		} else {
+			Session::flash('error', 'Operacion no permitida');
+			return Redirect::to('/');
+		}
+	}
+
+	public function getPerfil($username = null)
+	{
+		function objectToArray($d) {
+				if (is_object($d)) {
+					// Gets the properties of the given object
+					// with get_object_vars function
+					$d = get_object_vars($d);
+				}
+		 
+				if (is_array($d)) {
+					/*
+					* Return array converted to object
+					* Using __FUNCTION__ (Magic constant)
+					* for recursive call
+					*/
+					return array_map(__FUNCTION__, $d);
+				}
+				else {
+					// Return array
+					return $d;
+				}
+			}
+
+		//if (Request::ajax())
+		//{
+			$user = objectToArray(User::perfil($username));
+			return Response::json($user);
+			//$userID = User::getUsernameID($username);
+
+			//return var_dump($user);
+		//} else {
+			//return View::make('users.perfil')
+					//->with('perfiles', $user);
+		//}
+	}
+
+}				

@@ -18,7 +18,7 @@
                     <li><a href=""><i class="icon-film"></i> Multimedia</a></li>
                 </ul>
                 <ul class="nav pull-right">
-                    <li {{ (Request::is('users/register') ? 'class="active"' : '') }}><a href="{{ URL::to('users/register') }}"><i class="icon-signin"></i> Ingresar/Registrarse</a></li>
+                    <li {{ (Request::is('usuario/nuevo') ? 'class="active"' : '') }}><a href="{{ URL::to('usuario/nuevo') }}"><i class="icon-signin"></i> Registrarse</a></li>
                 </ul>               
             </div>
         </div>

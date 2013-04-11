@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.mailgun.org',
+	'host' => 'mail.regresoacasa.mx',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return array(
 	|
 	*/
 
-	'port' => 587,
+	'port' => 26,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	'from' => array('address' => 'administracion@regresoacasa.mx', 'name' => 'Administracion Regreso a Casa'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => null,
+	'username' => 'administracion@regresoacasa.mx',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,6 +93,6 @@ return array(
 	|
 	*/
 
-	'password' => null,
+	'password' => 'D6i26EJ%OO;+',
 
 );
