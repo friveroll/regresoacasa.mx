@@ -5,7 +5,9 @@ use Toddish\Verify\Models\User as VerifyUser;
 class User extends VerifyUser
 {
 	
-    protected $fillable = array('username', 
+    protected $fillable = array('username',
+                                'first_name',
+                                'last_name', 
     	                        'password', 
     	                        'salt',
     	                        'email',
@@ -23,6 +25,19 @@ class User extends VerifyUser
 	public function getID()
 	{
 	    return $this->getKey();
+	}
+
+	public static function getByUsername($username)
+	{
+		try
+		{
+			return DB::table('users')->where('username', $username)->first();
+		}
+		catch (UserDoesNotExistException $e)
+		{
+			Session::flash('error', 'El usuario no existe');
+	    	return Redirect::to('/');
+		}
 	}
 
 	public static function getUsernameID($username)
@@ -121,6 +136,8 @@ class User extends VerifyUser
 							->join('profiles', 'users.id', '=', 'profiles.user_id')
 							->where('username','=', $username)
 							->get(array("username",
+								        "first_name",
+								        "last_name",
 								        "email", 
 								        "birthday", 
 								        "country_id",
@@ -132,10 +149,11 @@ class User extends VerifyUser
 								        "updated_at" ));
 	}
 
-	public function getProfile()
+	public function date()
 	{
-		$this->profile()->get();
+		return ExpressiveDate::make($this->created_at)->getRelativeDate();
 	}
+
 }
 
 class UserAlreadyActivatedException extends Exception {};

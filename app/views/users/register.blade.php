@@ -348,10 +348,10 @@
                         </div>
                     </div>         
 
-                   <div class="control-group {{ ($errors->has('sexo')) ? 'error' : '' }}" for='sexo'>
+                   <div class="control-group {{ ($errors->has('estado_de_vida_id')) ? 'error' : '' }}" for='sexo'>
                         {{ Form::label('estado_de_vida_id', 'Estado de Vida', array('class'=>"control-label")) }} 
                         <div class="controls">
-                        {{ Form::select('estado_de_vida_id', array('1' => 'Soltero','2' => 'Casado')) }}
+                        {{ Form::select('estado_de_vida_id', array('' => 'Seleccione', '1' => 'Solter(o/a)','2' => 'Casad(o/a)', '3' => 'Religioso')) }}
                         <p class="help-block">{{ $errors->first('estado_de_vida_id') }}</p>
                         </div>
                     </div>

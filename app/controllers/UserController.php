@@ -139,7 +139,7 @@ class UserController extends BaseController {
 		    {
 		        // User activation failed
 		        Session::flash('error', 'Existe un problema de activaci&oacute;n con su cuenta. Por favor contacte al administrador.');
-				return Redirect::to('/');
+				    return Redirect::to('/');
 		    }
 	    }
 	    catch (UserAlreadyActivatedException $e)
@@ -150,14 +150,55 @@ class UserController extends BaseController {
 
 	}
 
-	public function getEntrar()
-	{
-		# code...
-	}
-
 	public function postEntrar()
 	{
-		# code...
+		$input = array('email' => Input::get('email'),
+                   'password' => Input::get('password'),
+                   'rememberMe' => Input::get('rememberMe'));
+
+    $rules = array ('email' => 'required|min:4|max:32|email',
+                    'password' => 'required|min:6');
+
+    $v = Validator::make($input, $rules);
+
+    if ($v->fails())
+    {
+      // Validation has failed
+      return Redirect::to('usuarios/entrar')->withErrors($v)->withInput();
+    } else{
+      try
+      {
+        Auth::attempt(array('identifier' => $input['email'], 'password' => $input['password'], $input['rememberMe'] ));
+      }
+      catch (UserDeletedException $e)
+      {
+        Session::flash('error', 'Usted ha sido expulsado, contacte al Administrador');
+        return Redirect::to('/');
+      }
+      catch (UserDisabledException $e)
+      {
+        Session::flash('error', 'Usted ha sido suspendido, contacte al Administrador');
+        return Redirect::to('/');
+      }
+      catch (UserUnverifiedException $e)
+      {
+        Session::flash('error', 'Su cuenta no ha sido verificada, revise su correo para el link de verificacion');
+        return Redirect::to('/');
+      }
+      catch (UserNotFoundException $e)
+      {
+        Session::flash('error', 'El usuario no existe, registrese rellenando el formulario');
+        return Redirect::to('usuarios/nuevo');
+      }
+      Session::flash('success', 'Bienvenido');
+      return Redirect::to('/');
+    }
+
+	}
+
+	public function getEntrar()
+	{
+    return View::make('users.entrar');
 	}
 
 	public function getExiste($username = null)
@@ -179,38 +220,18 @@ class UserController extends BaseController {
 
 	public function getPerfil($username = null)
 	{
-		function objectToArray($d) {
-				if (is_object($d)) {
-					// Gets the properties of the given object
-					// with get_object_vars function
-					$d = get_object_vars($d);
-				}
-		 
-				if (is_array($d)) {
-					/*
-					* Return array converted to object
-					* Using __FUNCTION__ (Magic constant)
-					* for recursive call
-					*/
-					return array_map(__FUNCTION__, $d);
-				}
-				else {
-					// Return array
-					return $d;
-				}
-			}
+			$user = new User;
 
-		//if (Request::ajax())
-		//{
-			$user = objectToArray(User::perfil($username));
-			return Response::json($user);
-			//$userID = User::getUsernameID($username);
+			$perfiles = $user->perfil($username);
 
-			//return var_dump($user);
-		//} else {
-			//return View::make('users.perfil')
-					//->with('perfiles', $user);
-		//}
+			$estado_de_vida = array('1' => 'Soltero','2' => 'Casado', '3' => 'Religioso');
+
+			$pais = new Pais;
+
+			//return Response::json($perfiles);
+			//return var_dump($perfiles);
+			return View::make('users.perfil', compact('perfiles', 'estado_de_vida', 'pais'));
+
 	}
 
 }				
