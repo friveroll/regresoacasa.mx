@@ -17,3 +17,7 @@ Route::get('/', function()
 });
 
 Route::controller('usuario', 'UserController');
+
+Route::get('prueba/{username?}', function($username){
+	return User::where('username', '=', $username)->with('profile', 'roles')->get();
+});

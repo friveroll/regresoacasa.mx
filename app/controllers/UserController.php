@@ -48,7 +48,7 @@ class UserController extends BaseController {
 		               'sexo' => Input::get('sexo'),
 		               'estado_de_vida_id' => Input::get('estado_de_vida_id'),
 		               'biografia' => Input::get('biografia'),
-		               //'avtar_file_name' => Input::get('avtar_file_name'),
+		               'avtar_file_name' => Input::get('avtar_file_name'),
 		              );
 
 		$this->profile = new Profile(array('birthday' => $input['birthday'],
@@ -56,7 +56,7 @@ class UserController extends BaseController {
 		                                   'sexo' => $input['sexo'],
 		                                   'estado_de_vida_id' => $input['estado_de_vida_id'],
 		                                   'biografia' => $input['biografia'],
-		                                   //'avtar_file_name' => $input['avtar_file_name'],
+		                                   'avtar_file_name' => $input['avtar_file_name'],
 		                                 ));
 
 		$rules = array('first_name' => 'required|min:4|max:24',
@@ -153,8 +153,7 @@ class UserController extends BaseController {
 	public function postEntrar()
 	{
 		$input = array('email' => Input::get('email'),
-                   'password' => Input::get('password'),
-                   'rememberMe' => Input::get('rememberMe'));
+                   'password' => Input::get('password'));
 
     $rules = array ('email' => 'required|min:4|max:32|email',
                     'password' => 'required|min:6');
@@ -164,33 +163,41 @@ class UserController extends BaseController {
     if ($v->fails())
     {
       // Validation has failed
-      return Redirect::to('usuarios/entrar')->withErrors($v)->withInput();
+      return Redirect::to('usuario/entrar')->withErrors($v)->withInput();
     } else{
       try
       {
-        Auth::attempt(array('identifier' => $input['email'], 'password' => $input['password'], $input['rememberMe'] ));
+        Auth::attempt($input,  Input::get('rememberMe'));
       }
-      catch (UserDeletedException $e)
+      catch (\Toddish\Verify\UserDeletedException $e)
       {
         Session::flash('error', 'Usted ha sido expulsado, contacte al Administrador');
         return Redirect::to('/');
       }
-      catch (UserDisabledException $e)
+      catch (\Toddish\Verify\UserDisabledException $e)
       {
         Session::flash('error', 'Usted ha sido suspendido, contacte al Administrador');
         return Redirect::to('/');
       }
-      catch (UserUnverifiedException $e)
+      catch (\Toddish\Verify\UserUnverifiedException $e)
       {
         Session::flash('error', 'Su cuenta no ha sido verificada, revise su correo para el link de verificacion');
         return Redirect::to('/');
       }
-      catch (UserNotFoundException $e)
+      catch (\Toddish\Verify\UserNotFoundException $e)
       {
         Session::flash('error', 'El usuario no existe, registrese rellenando el formulario');
-        return Redirect::to('usuarios/nuevo');
+        return Redirect::to('usuario/nuevo')
+          ->withInput($input);
       }
-      Session::flash('success', 'Bienvenido');
+      catch (\Toddish\Verify\UserPasswordIncorrectException $e)
+      {
+        Session::flash('error', 'Contraseña incorrecta');
+        return Redirect::to('usuario/entrar')
+            ->withInput($input);
+      }
+      $nombre = Auth::user()->first_name . " " . Auth::user()->last_name;
+      Session::flash('success', 'Bienvenido ' . $nombre);
       return Redirect::to('/');
     }
 
@@ -218,7 +225,14 @@ class UserController extends BaseController {
 		}
 	}
 
-	public function getPerfil($username = null)
+	public function getSalir($value='')
+  {
+    Auth::logout();
+    Session::flash('info', 'Ha salido del sitio');
+    return Redirect::to('/');
+  }
+
+  public function getPerfil($username = null)
 	{
 			$user = new User;
 
@@ -233,5 +247,7 @@ class UserController extends BaseController {
 			return View::make('users.perfil', compact('perfiles', 'estado_de_vida', 'pais'));
 
 	}
+
+
 
 }				

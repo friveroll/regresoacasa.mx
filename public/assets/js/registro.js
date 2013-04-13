@@ -43,6 +43,9 @@ $(document).ready(function(){
     $('button.btn.btn-mini.btn-next').removeClass('disabled').addClass('enabled');
   },
  });
+
+ $('#birthday').datepicker();
+ 
  // INITIALIZE WIZARD
  $('#MyWizard').on('change', function(e, data) {
    console.log('change');

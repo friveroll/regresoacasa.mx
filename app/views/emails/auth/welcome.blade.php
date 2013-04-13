@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es-MX">
 	<head>
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h2>Welcome</h2>
+		<h2>Bienvenido a Regreso a Casa</h2>
 
-		<p><b>Account:</b> {{{ $email }}}</p>
-		<p>To activate your account, <a href="{{  URL::to('users/activate', array('id' => $userId, urlencode($activationCode))) }}">click here.</a></p>
-		<p>Or point your browser to this address: <br /> {{  URL::to('users/activate', array('id' => $userId, urlencode($activationCode))) }}</p>
-		<p>Thank you, <br />
-			~The Admin Team</p>
+		<p><b>Cuenta:</b> {{{ $email }}}</p>
+		<p>Para activar tu cuenta, <a href="{{  URL::to('usuario/activacion', array('id' => $userId, urlencode($activationCode))) }}">visita este enlace.</a></p>
+		<p>O dirige tu navegador hacia esta direcci&oacute;n: <br /> {{ URL::to('usuario/activacion', array('id' => $userId, urlencode($activationCode))) }}</p>
+		<p>Gracias.</p>
 	</body>
 </html>

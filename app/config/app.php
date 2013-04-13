@@ -116,6 +116,7 @@ return array(
 		'Toddish\Verify\VerifyServiceProvider',
 		'ExpressiveDateServiceProvider', // Expresive Date
 		'Way\Generators\GeneratorsServiceProvider', // Generators
+		'Intervention\Image\ImageServiceProvider', // Image Handler
 
 	),
 
@@ -181,6 +182,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+		/* Additional Aliases */
+		'Image'           => 'Intervention\Image\Facades\Image',
 
 	),
 

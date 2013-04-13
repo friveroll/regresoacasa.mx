@@ -17,17 +17,25 @@ class User extends VerifyUser
     	                        'registro_IP',
     	                        'last_IP');
 
+    protected $hidden = array('password',
+                              'salt',
+                              'verified',
+                              'deleted',
+                              'disabled',
+                              "activation_code",
+                              "reset_password_code");
+  	
   	public function profile()
 	{
 		return $this->hasOne('Profile');
 	}
 
-	public function getID()
+	public function getId()
 	{
 	    return $this->getKey();
 	}
 
-	public static function getByUsername($username)
+	public static function getByusername($username)
 	{
 		try
 		{
@@ -38,6 +46,11 @@ class User extends VerifyUser
 			Session::flash('error', 'El usuario no existe');
 	    	return Redirect::to('/');
 		}
+	}
+
+	public static function getName()
+	{			
+		//return $this->first_name . " " . $this->last_name;
 	}
 
 	public static function getUsernameID($username)
@@ -119,7 +132,7 @@ class User extends VerifyUser
 		return false;
 	}
 
-	public function setLastIP()
+	public function setLastip()
 	{
 		$this->last_IP = ip2long(Request::getClientIp());
 		$this->save();
@@ -149,7 +162,7 @@ class User extends VerifyUser
 								        "updated_at" ));
 	}
 
-	public function date()
+	public function getDate()
 	{
 		return ExpressiveDate::make($this->created_at)->getRelativeDate();
 	}

@@ -10,7 +10,7 @@
 			<div class="control-group {{ ($errors->has('email')) ? 'error' : '' }}" for='email'>
 			    {{ Form::label('email', 'Correo electronico: ', array('class'=>"control-label"))}}  
 			    <div class="controls">
-			        <input type="text" id="email" name="email" placeholder="Correo" class="input-xlarge">
+			        <input type="text" id="email" name="email" value="{{ Request::old('email') }}" placeholder="Correo" class="input-xlarge">
 			        <p class="help-block">{{ $errors->first('email') }}</p>
 			    </div>
 			</div>
