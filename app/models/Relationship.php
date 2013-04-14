@@ -4,7 +4,7 @@ class Relationship extends Eloquent {
 
 	protected $table = 'relationships';
 
-	protected $fillable = array('type', 'user_a', 'user_b', 'accepted');
+	protected $fillable = array('type_id', 'user_a', 'user_b', 'accepted');
 
 	public function user()
 	{

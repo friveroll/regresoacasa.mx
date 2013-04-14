@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://regresoacasa.dev',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -117,6 +117,7 @@ return array(
 		'ExpressiveDateServiceProvider', // Expresive Date
 		'Way\Generators\GeneratorsServiceProvider', // Generators
 		'Intervention\Image\ImageServiceProvider', // Image Handler
+		'Profiler\ProfilerServiceProvider', // Profiler
 
 	),
 
@@ -184,6 +185,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 		/* Additional Aliases */
 		'Image'           => 'Intervention\Image\Facades\Image',
+		'Profiler'        => 'Profiler\Facades\Profiler',
 
 	),
 
