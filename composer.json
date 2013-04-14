@@ -6,7 +6,8 @@
 		"intervention/image": "dev-master"
 	},
 	"require-dev": {
-		"way/generators": "dev-master"			
+		"way/generators": "dev-master",
+		"loic-sharma/profiler": "1.0.*"			
 	},
 	"autoload": {
 		"classmap": [

@@ -18,16 +18,28 @@ class User extends VerifyUser
     	                        'last_IP');
 
     protected $hidden = array('password',
-                              'salt',
-                              'verified',
+    						  'salt',
+    						  'verified',
                               'deleted',
                               'disabled',
                               "activation_code",
                               "reset_password_code");
+
+    protected $guarded = array('id', 'password', 'salt');
   	
   	public function profile()
 	{
 		return $this->hasOne('Profile');
+	}
+
+	public function relationships()
+	{
+		return $this
+			->belongsToMany('Relationship', 
+				            'relationship_types',
+				            'user_a',
+				            'user_b')
+			->withTimestamps();
 	}
 
 	public function getId()
