@@ -13,4 +13,8 @@ class Profile extends Eloquent {
 		return $this->belongsTo('User', 'user_id');
 	}
 
+  public function pais()
+  {
+    return $this->belongsTo('Pais', 'country_id');
+  }
 }

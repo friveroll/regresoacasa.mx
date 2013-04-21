@@ -4,180 +4,180 @@ use Toddish\Verify\Models\User as VerifyUser;
 
 class User extends VerifyUser
 {
-	
+
     protected $fillable = array('username',
                                 'first_name',
-                                'last_name', 
-    	                        'password', 
-    	                        'salt',
-    	                        'email',
-    	                        'verified',
-    	                        'deleted',
-    	                        'disabled',
-    	                        'registro_IP',
-    	                        'last_IP');
+                                'last_name',
+                                'password',
+                                'salt',
+                                'email',
+                                'verified',
+                                'deleted',
+                                'disabled',
+                                'registro_IP',
+                                'last_IP');
 
     protected $hidden = array('password',
-    						  'salt',
-    						  'verified',
+                              'salt',
+                              'verified',
                               'deleted',
                               'disabled',
                               "activation_code",
                               "reset_password_code");
 
     protected $guarded = array('id', 'password', 'salt');
-  	
-  	public function profile()
-	{
-		return $this->hasOne('Profile');
-	}
 
-	public function relationships()
-	{
-		return $this
-			->belongsToMany('Relationship', 
-				            'relationship_types',
-				            'user_a',
-				            'user_b')
-			->withTimestamps();
-	}
+    public function profile()
+    {
+      return $this->hasOne('Profile');
+    }
 
-	public function getId()
-	{
-	    return $this->getKey();
-	}
+  public function relationships()
+  {
+    return $this
+      ->belongsToMany('Relationship',
+                      'relationship_types',
+                      'user_a',
+                      'user_b')
+      ->withTimestamps();
+  }
 
-	public static function getByusername($username)
-	{
-		try
-		{
-			return DB::table('users')->where('username', $username)->first();
-		}
-		catch (UserDoesNotExistException $e)
-		{
-			Session::flash('error', 'El usuario no existe');
-	    	return Redirect::to('/');
-		}
-	}
+  public function getId()
+  {
+    return $this->getKey();
+  }
 
-	public static function getName()
-	{			
-		//return $this->first_name . " " . $this->last_name;
-	}
+  public static function getByusername($username)
+  {
+    try
+    {
+      return DB::table('users')->where('username', $username)->first();
+    }
+    catch (UserDoesNotExistException $e)
+    {
+      Session::flash('error', 'El usuario no existe');
+        return Redirect::to('/');
+    }
+  }
 
-	public static function getUsernameID($username)
-	{
-		try
-		{
-			$id = DB::table('users')->where('username', $username)->pluck('id');
-			return $id;
-		}
-		catch (UserDoesNotExistException $e)
-		{
-			Session::flash('error', 'El usuario no existe');
-	    	return Redirect::to('/');
-		}
-	}
+  public static function getName()
+  {
+    //return $this->first_name . " " . $this->last_name;
+  }
 
-	/**
-	 * Generate a random string. If your server has
-	 * @return string
-	 */
-	public function getRandomString($length = 42)
-	{
-		// We'll check if the user has OpenSSL installed with PHP. If they do
-		// we'll use a better method of getting a random string. Otherwise, we'll
-		// fallback to a reasonably reliable method.
-		if (function_exists('openssl_random_pseudo_bytes'))
-		{
-			// We generate twice as many bytes here because we want to ensure we have
-			// enough after we base64 encode it to get the length we need because we
-			// take out the "/", "+", and "=" characters.
-			$bytes = openssl_random_pseudo_bytes($length * 2);
+  public static function getUsernameID($username)
+  {
+    try
+    {
+      $id = DB::table('users')->where('username', $username)->pluck('id');
+      return $id;
+    }
+    catch (UserDoesNotExistException $e)
+    {
+      Session::flash('error', 'El usuario no existe');
+        return Redirect::to('/');
+    }
+  }
 
-			// We want to stop execution if the key fails because, well, that is bad.
-			if ($bytes === false)
-			{
-				throw new \RuntimeException('Unable to generate random string.');
-			}
+  /**
+   * Generate a random string. If your server has
+   * @return string
+   */
+  public function getRandomString($length = 42)
+  {
+    // We'll check if the user has OpenSSL installed with PHP. If they do
+    // we'll use a better method of getting a random string. Otherwise, we'll
+    // fallback to a reasonably reliable method.
+    if (function_exists('openssl_random_pseudo_bytes'))
+    {
+      // We generate twice as many bytes here because we want to ensure we have
+      // enough after we base64 encode it to get the length we need because we
+      // take out the "/", "+", and "=" characters.
+      $bytes = openssl_random_pseudo_bytes($length * 2);
 
-			return substr(str_replace(array('/', '+', '='), '', base64_encode($bytes)), 0, $length);
-		}
+      // We want to stop execution if the key fails because, well, that is bad.
+      if ($bytes === false)
+      {
+        throw new \RuntimeException('Unable to generate random string.');
+      }
 
-		$pool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      return substr(str_replace(array('/', '+', '='), '', base64_encode($bytes)), 0, $length);
+    }
 
-		return substr(str_shuffle(str_repeat($pool, 5)), 0, $length);
-	}
+    $pool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-	public function getActivationCode()
-	{
-		$this->activation_code = $activationCode = $this->getRandomString();
+    return substr(str_shuffle(str_repeat($pool, 5)), 0, $length);
+  }
 
-		$this->save();
+  public function getActivationCode()
+  {
+    $this->activation_code = $activationCode = $this->getRandomString();
 
-		return $activationCode;
-	}
+    $this->save();
 
-	/**
-	 * Attempts to activate the given user by checking
-	 * the activate code. If the user is activated already,
-	 * an Exception is thrown.
-	 *
-	 * @param  string  $activationCode
-	 * @return bool
-	 * @throws Cartalyst\Sentry\Users\UserAlreadyActivatedException
-	 */
-	public function attemptActivation($activationCode)
-	{
-		if ($this->verified == 1)
-		{
-			throw new UserAlreadyActivatedException('Su cuenta ya ha sido activada.');
-		}
+    return $activationCode;
+  }
 
-		if ($activationCode == $this->activation_code)
-		{
-			$this->activation_code = null;
-			$this->verified = 1;
-			return $this->save();
-		}
+  /**
+   * Attempts to activate the given user by checking
+   * the activate code. If the user is activated already,
+   * an Exception is thrown.
+   *
+   * @param  string  $activationCode
+   * @return bool
+   * @throws Cartalyst\Sentry\Users\UserAlreadyActivatedException
+   */
+  public function attemptActivation($activationCode)
+  {
+    if ($this->verified == 1)
+    {
+      throw new UserAlreadyActivatedException('Su cuenta ya ha sido activada.');
+    }
 
-		return false;
-	}
+    if ($activationCode == $this->activation_code)
+    {
+      $this->activation_code = null;
+      $this->verified = 1;
+      return $this->save();
+    }
 
-	public function setLastip()
-	{
-		$this->last_IP = ip2long(Request::getClientIp());
-		$this->save();
-	}
+    return false;
+  }
 
-	public static function username($username)
-	{
-		return static::where('username','=', $username)->pluck('username');
-	}
+  public function setLastip()
+  {
+    $this->last_IP = ip2long(Request::getClientIp());
+    $this->save();
+  }
 
-	public static function perfil($username)
-	{
-		return DB::table('users')
-							->join('profiles', 'users.id', '=', 'profiles.user_id')
-							->where('username','=', $username)
-							->get(array("username",
-								        "first_name",
-								        "last_name",
-								        "email", 
-								        "birthday", 
-								        "country_id",
-								        "sexo", 
-								        "estado_de_vida_id", 
-								        "biografia",
-								        "avtar_file_name",
-								        "created_at",
-								        "updated_at" ));
-	}
+  public static function username($username)
+  {
+    return static::where('username','=', $username)->pluck('username');
+  }
 
-	public function getDate()
-	{
-		return ExpressiveDate::make($this->created_at)->getRelativeDate();
-	}
+  public static function perfil($username)
+  {
+    return DB::table('users')
+              ->join('profiles', 'users.id', '=', 'profiles.user_id')
+              ->where('username','=', $username)
+              ->get(array("username",
+                          "first_name",
+                          "last_name",
+                          "email",
+                          "birthday",
+                          "country_id",
+                          "sexo",
+                          "estado_de_vida_id",
+                          "biografia",
+                          "avtar_file_name",
+                          "created_at",
+                          "updated_at" ));
+  }
+
+  public function getDate()
+  {
+    return ExpressiveDate::make($this->created_at)->getRelativeDate();
+  }
 
 }
 
