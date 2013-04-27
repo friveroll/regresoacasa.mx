@@ -1,0 +1,1061 @@
+[2013-04-13 09:03:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7503
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7220): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7196): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-13 09:05:35] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'use' (T_USE), expecting ';' or '{' in /home/felipillo/public_html/test1/app/models/Friendship.php line 14' in /home/felipillo/public_html/test1/app/models/Friendship.php:14
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 09:06:40] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8644' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8644
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8644): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8644, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->belongsToMany('Friendship', 'friend_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friends()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friends')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:10:52] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8609' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8609
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8609): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8609, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->hasMany('Friendship', 'friend_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friends()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friends')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:12:48] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8609' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8609
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8609): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8609, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->hasMany('Friendship', 'friend_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friends()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friends')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:12:53] log.ERROR: exception 'ErrorException' with message 'Warning: Missing argument 1 for {closure}() in /home/felipillo/public_html/test1/app/routes.php line 21' in /home/felipillo/public_html/test1/app/routes.php:21
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(21): Symfony\Component\Debug\ErrorHandler->handle(2, 'Missing argumen...', '/home/felipillo...', 21, Array)
+#1 [internal function]: {closure}()
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-13 09:12:59] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8609' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8609
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8609): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8609, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->hasMany('Friendship', 'friend_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friends()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friends')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:14:49] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8609' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8609
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8609): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8609, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->hasMany('Friendships', 'friend_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friends()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friends')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:16:13] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8609' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8609
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8609): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8609, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->hasMany('Friendships', 'friend_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friends()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friends')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:18:00] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8609' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8609
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8609): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8609, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->hasMany('Friendships', 'friend_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friends()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friends')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:22:31] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8609' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8609
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8609): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8609, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->hasMany('Friendships', 'friend_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friendships()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friendships')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friendships', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:29:29] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8644' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8644
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8644): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8644, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->belongsToMany('Friendships')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friendships()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friendships')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friendships', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:43:23] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8644' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8644
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8644): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8644, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->belongsToMany('Friendships')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friendships()
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friendships')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friendships', Object(Closure))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#6 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Builder->get()
+#7 [internal function]: {closure}('felipillo')
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-13 09:47:41] log.ERROR: exception 'ErrorException' with message 'Notice: Undefined property: Illuminate\Database\Eloquent\Builder::$friendships in /home/felipillo/public_html/test1/app/routes.php line 23' in /home/felipillo/public_html/test1/app/routes.php:23
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(23): Symfony\Component\Debug\ErrorHandler->handle(8, 'Undefined prope...', '/home/felipillo...', 23, Array)
+#1 [internal function]: {closure}('felipillo')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-13 09:48:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7503
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7220): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7196): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-13 09:48:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7503
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7220): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7196): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-13 09:48:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7503
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7220): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7196): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-13 09:48:51] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8644' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8644
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8644): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8644, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->belongsToMany('Friendships', 'user_id', 'friend_id')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(9482): User->friendships()
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(9791): Illuminate\Database\Eloquent\Model->getAttribute('friendships')
+#4 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Model->__get('friendships')
+#5 [internal function]: {closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-13 09:49:38] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8644' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8644
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8644): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8644, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->belongsToMany('Friendships', 'user_id', 'friend_id')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(9482): User->friendships()
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(9791): Illuminate\Database\Eloquent\Model->getAttribute('friendships')
+#4 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Model->__get('friendships')
+#5 [internal function]: {closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-13 09:54:20] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::has_many()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('has_many', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->has_many('Friendship', 'user_id')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('has_many', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->has_many('Friendship', 'user_id')
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(9876): call_user_func_array(Array, Array)
+#6 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->__call('has_many', Array)
+#7 /home/felipillo/public_html/test1/app/models/User.php(35): User->has_many('Friendship', 'user_id')
+#8 /home/felipillo/public_html/test1/app/routes.php(23): User->friend()
+#9 [internal function]: {closure}()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 09:54:56] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant friendships - assumed 'friendships' in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8609' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8609
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8609): Symfony\Component\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 8609, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Model->hasMany('Friendship', 'user_id')
+#2 /home/felipillo/public_html/test1/app/routes.php(23): User->friend()
+#3 [internal function]: {closure}()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#10 {main} [] []
+[2013-04-13 09:55:40] log.ERROR: exception 'ErrorException' with message 'Warning: array_merge(): Argument #1 is not an array in /home/felipillo/public_html/test1/app/models/User.php line 39' in /home/felipillo/public_html/test1/app/models/User.php:39
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'array_merge(): ...', '/home/felipillo...', 39, Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(39): array_merge(Object(Illuminate\Database\Eloquent\Collection), Object(Illuminate\Database\Eloquent\Collection))
+#2 /home/felipillo/public_html/test1/app/routes.php(23): User->friend()
+#3 [internal function]: {closure}()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#10 {main} [] []
+[2013-04-13 09:57:39] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Object of class Illuminate\Database\Eloquent\Relations\BelongsToMany could not be converted to string in /home/felipillo/public_html/test1/bootstrap/compiled.php line 16265' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16265
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(16265): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Object of class...', '/home/felipillo...', 16265, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(17041): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Eloquent\Relations\BelongsToMany))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(16071): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Eloquent\Relations\BelongsToMany))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7490): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Eloquent\Relations\BelongsToMany))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13442): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Eloquent\Relations\BelongsToMany), Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-04-13 09:58:31] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user_id' doesn't exist (SQL: select `friendships`.*, `user_id`.`friend_id` as `pivot_friend_id`, `user_id`.`friendship_id` as `pivot_friendship_id` from `friendships` inner join `user_id` on `friendships`.`id` = `user_id`.`friendship_id` where `user_id`.`friend_id` = ?) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(73): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(9482): Illuminate\Database\Eloquent\Relations\BelongsToMany->getResults()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(9791): Illuminate\Database\Eloquent\Model->getAttribute('friend')
+#8 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Model->__get('friend')
+#9 [internal function]: {closure}()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 09:59:14] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.friendship_user' doesn't exist (SQL: select `friendships`.*, `friendship_user`.`user_id` as `pivot_user_id`, `friendship_user`.`friendship_id` as `pivot_friendship_id` from `friendships` inner join `friendship_user` on `friendships`.`id` = `friendship_user`.`friendship_id` where `friendship_user`.`user_id` = ?) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(73): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(9482): Illuminate\Database\Eloquent\Relations\BelongsToMany->getResults()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(9791): Illuminate\Database\Eloquent\Model->getAttribute('friend')
+#8 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Model->__get('friend')
+#9 [internal function]: {closure}()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 10:00:07] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.friendship_user' doesn't exist (SQL: select `friendships`.*, `friendship_user`.`user_id` as `pivot_user_id`, `friendship_user`.`friendship_id` as `pivot_friendship_id`, `friendship_user`.`friend_id` as `pivot_friend_id` from `friendships` inner join `friendship_user` on `friendships`.`id` = `friendship_user`.`friendship_id` where `friendship_user`.`user_id` = ?) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(73): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(9482): Illuminate\Database\Eloquent\Relations\BelongsToMany->getResults()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(9791): Illuminate\Database\Eloquent\Model->getAttribute('friend')
+#8 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Model->__get('friend')
+#9 [internal function]: {closure}()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 10:01:15] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.friendship_user' doesn't exist (SQL: select `friendships`.*, `friendship_user`.`user_id` as `pivot_user_id`, `friendship_user`.`friendship_id` as `pivot_friendship_id`, `friendship_user`.`friend_id` as `pivot_friend_id` from `friendships` inner join `friendship_user` on `friendships`.`id` = `friendship_user`.`friendship_id` where `friendship_user`.`user_id` = ?) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(73): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(9482): Illuminate\Database\Eloquent\Relations\BelongsToMany->getResults()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(9791): Illuminate\Database\Eloquent\Model->getAttribute('friend')
+#8 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Model->__get('friend')
+#9 [internal function]: {closure}()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 10:01:18] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.friendship_user' doesn't exist (SQL: select `friendships`.*, `friendship_user`.`user_id` as `pivot_user_id`, `friendship_user`.`friendship_id` as `pivot_friendship_id`, `friendship_user`.`friend_id` as `pivot_friend_id` from `friendships` inner join `friendship_user` on `friendships`.`id` = `friendship_user`.`friendship_id` where `friendship_user`.`user_id` = ?) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(73): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(9482): Illuminate\Database\Eloquent\Relations\BelongsToMany->getResults()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(9791): Illuminate\Database\Eloquent\Model->getAttribute('friend')
+#8 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Model->__get('friend')
+#9 [internal function]: {closure}()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 10:02:18] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.friendship_user' doesn't exist (SQL: select `friendships`.*, `friendship_user`.`user_id` as `pivot_user_id`, `friendship_user`.`friendship_id` as `pivot_friendship_id`, `friendship_user`.`friend_id` as `pivot_friend_id` from `friendships` inner join `friendship_user` on `friendships`.`id` = `friendship_user`.`friendship_id` where `friendship_user`.`user_id` = ?) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(73): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(9482): Illuminate\Database\Eloquent\Relations\BelongsToMany->getResults()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(9791): Illuminate\Database\Eloquent\Model->getAttribute('friend')
+#8 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Model->__get('friend')
+#9 [internal function]: {closure}()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 10:03:14] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.friendship_user' doesn't exist (SQL: select `friendships`.*, `friendship_user`.`user_id` as `pivot_user_id`, `friendship_user`.`friendship_id` as `pivot_friendship_id`, `friendship_user`.`friend_id` as `pivot_friend_id` from `friendships` inner join `friendship_user` on `friendships`.`id` = `friendship_user`.`friendship_id` where `friendship_user`.`user_id` = ?) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 [internal function]: {closure}()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-04-13 10:05:08] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.Friendship' doesn't exist (SQL: select `users`.*, `Friendship`.`user_id` as `pivot_user_id`, `Friendship`.`friend_id` as `pivot_friend_id` from `users` inner join `Friendship` on `users`.`id` = `Friendship`.`friend_id` where `Friendship`.`user_id` = ?) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `users`....', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `users`....', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `users`....', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/app/routes.php(23): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 [internal function]: {closure}()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-04-13 10:07:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7503
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7220): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7196): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-13 10:08:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7503
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7220): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7196): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-13 18:22:48] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7177): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-04-13 18:26:32] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::confirmed()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('confirmed', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->confirmed()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/app/routes.php(22): Illuminate\Database\Eloquent\Builder->__call('confirmed', Array)
+#4 /home/felipillo/public_html/test1/app/routes.php(22): Illuminate\Database\Eloquent\Builder->confirmed()
+#5 [internal function]: {closure}('felipillo')
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-13 18:30:52] log.ERROR: exception 'ErrorException' with message 'Warning: explode() expects parameter 2 to be string, array given in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php line 393' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:393
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'explode() expec...', '/home/felipillo...', 393, Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(393): explode('.', Array)
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(371): Illuminate\Database\Eloquent\Builder->parseNestedRelations(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(341): Illuminate\Database\Eloquent\Builder->parseRelations(Array)
+#4 /home/felipillo/public_html/test1/app/routes.php(26): Illuminate\Database\Eloquent\Builder->with('profile', 'roles', Array)
+#5 [internal function]: {closure}('felipillo')
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-13 18:54:27] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/felipillo/public_html/test1/app/routes.php line 27' in /home/felipillo/public_html/test1/app/routes.php:27
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 18:54:55] log.ERROR: exception 'ErrorException' with message 'Notice: Undefined variable: username in /home/felipillo/public_html/test1/app/routes.php line 27' in /home/felipillo/public_html/test1/app/routes.php:27
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(27): Symfony\Component\Debug\ErrorHandler->handle(8, 'Undefined varia...', '/home/felipillo...', 27, Array)
+#1 [internal function]: {closure}(Object(Illuminate\Database\Query\Builder))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(398): call_user_func(Object(Closure), Object(Illuminate\Database\Query\Builder))
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(263): Illuminate\Database\Query\Builder->whereNested(Object(Closure), 'or')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(315): Illuminate\Database\Query\Builder->where(Object(Closure), NULL, NULL, 'or')
+#5 [internal function]: Illuminate\Database\Query\Builder->orWhere(Object(Closure))
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#7 [internal function]: Illuminate\Database\Eloquent\Builder->__call('orWhere', Array)
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->orWhere(Object(Closure))
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php(233): call_user_func_array(Array, Array)
+#10 /home/felipillo/public_html/test1/app/routes.php(28): Illuminate\Database\Eloquent\Relations\Relation->__call('orWhere', Array)
+#11 /home/felipillo/public_html/test1/app/routes.php(28): Illuminate\Database\Eloquent\Relations\BelongsToMany->orWhere(Object(Closure))
+#12 [internal function]: {closure}(Object(Illuminate\Database\Eloquent\Relations\BelongsToMany))
+#13 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(272): call_user_func(Object(Closure), Object(Illuminate\Database\Eloquent\Relations\BelongsToMany))
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#15 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#16 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#17 [internal function]: {closure}('felipillo')
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-04-13 19:04:08] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/routes.php line 34' in /home/felipillo/public_html/test1/app/routes.php:34
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 19:04:25] log.ERROR: exception 'UnexpectedValueException' with message 'The Response content must be a string or object implementing __toString(), "array" given.' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16263
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(17041): Symfony\Component\HttpFoundation\Response->setContent(Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(16071): Illuminate\Http\Response->setContent(Array)
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(7490): Symfony\Component\HttpFoundation\Response->__construct(Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13442): Illuminate\Routing\Router->prepare(Array, Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-13 19:45:58] log.ERROR: exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'friendships' (SQL: select `friendships`.*, `friendships`.`user_id` as `pivot_user_id`, `friendships`.`friend_id` as `pivot_friend_id`, `friendships`.`created_at` as `pivot_created_at`, `friendships`.`updated_at` as `pivot_updated_at` from `friendships` inner join `friendships` on `friendships`.`id` = `friendships`.`friend_id` where `friendships`.`user_id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => '5',
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 19:46:27] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'field list' (SQL: select `friendships`.*, `users`.`user_id` as `pivot_user_id`, `users`.`friend_id` as `pivot_friend_id`, `users`.`created_at` as `pivot_created_at`, `users`.`updated_at` as `pivot_updated_at` from `friendships` inner join `users` on `friendships`.`id` = `users`.`friend_id` where `users`.`user_id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => '5',
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 19:47:46] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user_id' doesn't exist (SQL: select `friendships`.*, `user_id`.`friend_id` as `pivot_friend_id`, `user_id`.`friendship_id` as `pivot_friendship_id`, `user_id`.`created_at` as `pivot_created_at`, `user_id`.`updated_at` as `pivot_updated_at` from `friendships` inner join `user_id` on `friendships`.`id` = `user_id`.`friendship_id` where `user_id`.`friend_id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => '5',
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 19:48:17] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.user_id' in 'field list' (SQL: select `friendships`.*, `users`.`user_id` as `pivot_user_id`, `users`.`friendship_id` as `pivot_friendship_id`, `users`.`created_at` as `pivot_created_at`, `users`.`updated_at` as `pivot_updated_at` from `friendships` inner join `users` on `friendships`.`id` = `users`.`friendship_id` where `users`.`user_id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => '5',
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 19:50:22] log.ERROR: exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'friendships' (SQL: select `friendships`.*, `friendships`.`friend_id` as `pivot_friend_id`, `friendships`.`friendship_id` as `pivot_friendship_id`, `friendships`.`created_at` as `pivot_created_at`, `friendships`.`updated_at` as `pivot_updated_at` from `friendships` inner join `friendships` on `friendships`.`id` = `friendships`.`friendship_id` where `friendships`.`friend_id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => '5',
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 19:51:23] log.ERROR: exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'friendships' (SQL: select `friendships`.*, `friendships`.`friend_id` as `pivot_friend_id`, `friendships`.`user_id` as `pivot_user_id`, `friendships`.`created_at` as `pivot_created_at`, `friendships`.`updated_at` as `pivot_updated_at` from `friendships` inner join `friendships` on `friendships`.`id` = `friendships`.`user_id` where `friendships`.`friend_id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => '5',
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 19:52:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/felipillo/public_html/test1/app/routes.php line 26' in /home/felipillo/public_html/test1/app/routes.php:26
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 19:58:25] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user_user' doesn't exist (SQL: select `users`.*, `user_user`.`user_id` as `pivot_user_id` from `users` inner join `user_user` on `users`.`id` = `user_user`.`user_id` where `user_user`.`user_id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => '5',
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `users`....', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `users`....', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `users`....', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(31): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 20:01:38] log.ERROR: exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'friendships' (SQL: select `friendships`.*, `friendships`.`friend_id` as `pivot_friend_id`, `friendships`.`friendship_id` as `pivot_friendship_id`, `friendships`.`created_at` as `pivot_created_at`, `friendships`.`updated_at` as `pivot_updated_at` from `friendships` inner join `friendships` on `friendships`.`id` = `friendships`.`friendship_id` where `friendships`.`friend_id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => '5',
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `friends...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `friends...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `friends...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(31): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 20:04:19] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::withTimestamps()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('withTimestamps', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->withTimestamps()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('withTimestamps', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->withTimestamps()
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php(233): call_user_func_array(Array, Array)
+#6 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Relations\Relation->__call('withTimestamps', Array)
+#7 /home/felipillo/public_html/test1/app/models/User.php(35): Illuminate\Database\Eloquent\Relations\BelongsTo->withTimestamps()
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->friends()
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('friends')
+#10 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#11 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#12 /home/felipillo/public_html/test1/app/routes.php(31): Illuminate\Database\Eloquent\Builder->get()
+#13 [internal function]: {closure}('felipillo')
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-04-13 20:04:30] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmed' in 'where clause' (SQL: select * from `users` where `users`.`id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => 0,
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(96): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php(233): call_user_func_array(Array, Array)
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsTo->get()
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#10 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#11 /home/felipillo/public_html/test1/app/routes.php(31): Illuminate\Database\Eloquent\Builder->get()
+#12 [internal function]: {closure}('felipillo')
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-04-13 20:06:08] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmed' in 'where clause' (SQL: select * from `users` where `users`.`id` in (?) and `confirmed` = ?) (Bindings: array (
+  0 => 0,
+  1 => '1',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(96): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php(233): call_user_func_array(Array, Array)
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsTo->get()
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'friends', Object(Closure))
+#10 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#11 /home/felipillo/public_html/test1/app/routes.php(31): Illuminate\Database\Eloquent\Builder->get()
+#12 [internal function]: {closure}('felipillo')
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-04-13 20:20:17] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.friendship_user' doesn't exist (SQL: select `users`.*, `friendship_user`.`friendship_id` as `pivot_friendship_id`, `friendship_user`.`user_id` as `pivot_user_id`, `friendship_user`.`created_at` as `pivot_created_at`, `friendship_user`.`updated_at` as `pivot_updated_at` from `users` inner join `friendship_user` on `users`.`id` = `friendship_user`.`user_id` where `friendship_user`.`friendship_id` in (?, ?)) (Bindings: array (
+  0 => '1',
+  1 => '2',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `users`....', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `users`....', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `users`....', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'user', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 20:20:52] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user_id' doesn't exist (SQL: select `users`.*, `user_id`.`friend_id` as `pivot_friend_id`, `user_id`.`user_id` as `pivot_user_id`, `user_id`.`created_at` as `pivot_created_at`, `user_id`.`updated_at` as `pivot_updated_at` from `users` inner join `user_id` on `users`.`id` = `user_id`.`user_id` where `user_id`.`friend_id` in (?, ?)) (Bindings: array (
+  0 => '1',
+  1 => '2',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `users`....', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `users`....', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `users`....', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'user', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 20:21:12] log.ERROR: exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'users' (SQL: select `users`.*, `users`.`user_id` as `pivot_user_id`, `users`.`friend_id` as `pivot_friend_id`, `users`.`created_at` as `pivot_created_at`, `users`.`updated_at` as `pivot_updated_at` from `users` inner join `users` on `users`.`id` = `users`.`friend_id` where `users`.`user_id` in (?, ?)) (Bindings: array (
+  0 => '1',
+  1 => '2',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `users`....', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `users`....', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `users`....', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'user', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(30): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 20:34:51] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/felipillo/public_html/test1/app/routes.php line 32' in /home/felipillo/public_html/test1/app/routes.php:32
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 20:45:53] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/felipillo/public_html/test1/app/routes.php line 26' in /home/felipillo/public_html/test1/app/routes.php:26
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 20:46:16] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/felipillo/public_html/test1/app/routes.php line 27' in /home/felipillo/public_html/test1/app/routes.php:27
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 20:47:26] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/felipillo/public_html/test1/app/routes.php line 27' in /home/felipillo/public_html/test1/app/routes.php:27
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 21:20:30] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/routes.php line 27' in /home/felipillo/public_html/test1/app/routes.php:27
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 22:44:43] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected end of file in /home/felipillo/public_html/test1/app/routes.php line 32' in /home/felipillo/public_html/test1/app/routes.php:32
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 22:45:10] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected end of file in /home/felipillo/public_html/test1/app/routes.php line 32' in /home/felipillo/public_html/test1/app/routes.php:32
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 22:45:54] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected end of file in /home/felipillo/public_html/test1/app/routes.php line 27' in /home/felipillo/public_html/test1/app/routes.php:27
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 23:26:24] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Class 'RelationshipsType' not found in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8644' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8644
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 23:27:11] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Class 'RelationshipsType' not found in /home/felipillo/public_html/test1/bootstrap/compiled.php line 8644' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8644
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-13 23:30:38] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.relationship_type_user' doesn't exist (SQL: select `relationship_types`.*, `relationship_type_user`.`user_id` as `pivot_user_id`, `relationship_type_user`.`relationship_type_id` as `pivot_relationship_type_id`, `relationship_type_user`.`created_at` as `pivot_created_at`, `relationship_type_user`.`updated_at` as `pivot_updated_at` from `relationship_types` inner join `relationship_type_user` on `relationship_types`.`id` = `relationship_type_user`.`relationship_type_id` where `relationship_type_user`.`user_id` in (?)) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `relatio...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `relatio...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `relatio...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'relationships', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(25): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 23:42:18] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'relationship_types.user_a' in 'field list' (SQL: select `relationships`.*, `relationship_types`.`user_a` as `pivot_user_a`, `relationship_types`.`user_b` as `pivot_user_b`, `relationship_types`.`created_at` as `pivot_created_at`, `relationship_types`.`updated_at` as `pivot_updated_at` from `relationships` inner join `relationship_types` on `relationships`.`id` = `relationship_types`.`user_b` where `relationship_types`.`user_a` in (?)) (Bindings: array (
+  0 => '7',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `relatio...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `relatio...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `relatio...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'relationships', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(25): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('DejaVu')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 23:43:24] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'relationship_types.user_a' in 'field list' (SQL: select `relationships`.*, `relationship_types`.`user_a` as `pivot_user_a`, `relationship_types`.`user_b` as `pivot_user_b`, `relationship_types`.`created_at` as `pivot_created_at`, `relationship_types`.`updated_at` as `pivot_updated_at` from `relationships` inner join `relationship_types` on `relationships`.`id` = `relationship_types`.`user_b` where `relationship_types`.`user_a` in (?)) (Bindings: array (
+  0 => '7',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `relatio...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `relatio...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `relatio...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'relationships', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(25): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('DejaVu')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 23:46:01] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'relationship_types.user_a' in 'field list' (SQL: select `relationships`.*, `relationship_types`.`user_a` as `pivot_user_a`, `relationship_types`.`user_b` as `pivot_user_b`, `relationship_types`.`created_at` as `pivot_created_at`, `relationship_types`.`updated_at` as `pivot_updated_at` from `relationships` inner join `relationship_types` on `relationships`.`id` = `relationship_types`.`user_b` where `relationship_types`.`user_a` in (?)) (Bindings: array (
+  0 => '7',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `relatio...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `relatio...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `relatio...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'relationships', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(25): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('DejaVu')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-04-13 23:46:07] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'relationship_types.user_a' in 'field list' (SQL: select `relationships`.*, `relationship_types`.`user_a` as `pivot_user_a`, `relationship_types`.`user_b` as `pivot_user_b`, `relationship_types`.`created_at` as `pivot_created_at`, `relationship_types`.`updated_at` as `pivot_updated_at` from `relationships` inner join `relationship_types` on `relationships`.`id` = `relationship_types`.`user_b` where `relationship_types`.`user_a` in (?)) (Bindings: array (
+  0 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `relatio...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `relatio...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `relatio...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php(97): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(279): Illuminate\Database\Eloquent\Relations\BelongsToMany->get()
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'relationships', Object(Closure))
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 /home/felipillo/public_html/test1/app/routes.php(25): Illuminate\Database\Eloquent\Builder->get()
+#9 [internal function]: {closure}('felipillo')
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13459): call_user_func_array(Object(Closure), Array)
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13438): Illuminate\Routing\Route->callCallable()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(7197): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []

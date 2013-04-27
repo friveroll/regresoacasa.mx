@@ -1,0 +1,680 @@
+[2013-04-10 07:09:12] log.ERROR: exception 'ErrorException' with message 'Warning: file_put_contents(/home/felipillo/public_html/test1/bootstrap/../app/storage/views/d57b1bab901b5820e6fbf4506b4641fe): failed to open stream: Permission denied in /home/felipillo/public_html/test1/bootstrap/compiled.php line 5409' in /home/felipillo/public_html/test1/bootstrap/compiled.php:5409
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'file_put_conten...', '/home/felipillo...', 5409, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(5409): file_put_contents('/home/felipillo...', '??<?php $__env-...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(65): Illuminate\Filesystem\Filesystem->put('/home/felipillo...', '??<?php $__env-...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(40): Illuminate\View\Compilers\BladeCompiler->compile('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(16900): Illuminate\View\View->render()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13303): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-10 07:09:36] log.ERROR: exception 'ErrorException' with message 'Warning: file_put_contents(/home/felipillo/public_html/test1/bootstrap/../app/storage/views/d57b1bab901b5820e6fbf4506b4641fe): failed to open stream: Permission denied in /home/felipillo/public_html/test1/bootstrap/compiled.php line 5409' in /home/felipillo/public_html/test1/bootstrap/compiled.php:5409
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'file_put_conten...', '/home/felipillo...', 5409, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(5409): file_put_contents('/home/felipillo...', '??<?php $__env-...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(65): Illuminate\Filesystem\Filesystem->put('/home/felipillo...', '??<?php $__env-...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(40): Illuminate\View\Compilers\BladeCompiler->compile('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(16900): Illuminate\View\View->render()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13303): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-04-10 07:09:55] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7405
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7122): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7098): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-10 07:11:05] log.ERROR: exception 'ErrorException' with message 'Warning: file_put_contents(/home/felipillo/public_html/test1/bootstrap/../app/storage/views/7cb83db80f0b8787b75ceb9c6626299a): failed to open stream: Permission denied in /home/felipillo/public_html/test1/bootstrap/compiled.php line 5409' in /home/felipillo/public_html/test1/bootstrap/compiled.php:5409
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'file_put_conten...', '/home/felipillo...', 5409, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(5409): file_put_contents('/home/felipillo...', '<!doctype html>...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(65): Illuminate\Filesystem\Filesystem->put('/home/felipillo...', '<!doctype html>...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(40): Illuminate\View\Compilers\BladeCompiler->compile('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(16900): Illuminate\View\View->render()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getNuevo', Object(Illuminate\View\View))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getNuevo', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-04-10 08:03:43] log.ERROR: exception 'ErrorException' with message 'Warning: Creating default object from empty value in /home/felipillo/public_html/test1/app/controllers/UserController.php line 128' in /home/felipillo/public_html/test1/app/controllers/UserController.php:128
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UserController.php(128): Symfony\Component\Debug\ErrorHandler->handle(2, 'Creating defaul...', '/home/felipillo...', 128, Array)
+#1 [internal function]: UserController->getActivacion('7', 'QT2I951dTRh71w2...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getActivacion', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getActivacion', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('7', 'QT2I951dTRh71w2...')
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-10 08:07:38] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Class 'UserAlreadyActivatedException' not found in /home/felipillo/public_html/test1/app/models/User.php line 81' in /home/felipillo/public_html/test1/app/models/User.php:81
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 08:08:48] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '\' (T_NS_SEPARATOR), expecting '{' in /home/felipillo/public_html/test1/app/models/User.php line 101' in /home/felipillo/public_html/test1/app/models/User.php:101
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 08:11:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'Exception' (T_STRING), expecting '{' in /home/felipillo/public_html/test1/app/models/User.php line 101' in /home/felipillo/public_html/test1/app/models/User.php:101
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 08:12:09] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'Exception' (T_STRING), expecting '{' in /home/felipillo/public_html/test1/app/models/User.php line 101' in /home/felipillo/public_html/test1/app/models/User.php:101
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 08:12:37] log.ERROR: exception 'UserAlreadyActivatedException' with message 'Su cuenta ya ha sido activada.' in /home/felipillo/public_html/test1/app/models/User.php:81
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UserController.php(123): User->attemptActivation('QT2I951dTRh71w2...')
+#1 [internal function]: UserController->getActivacion('7', 'QT2I951dTRh71w2...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getActivacion', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getActivacion', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('7', 'QT2I951dTRh71w2...')
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-10 08:15:26] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'catch' (T_CATCH) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 140' in /home/felipillo/public_html/test1/app/controllers/UserController.php:140
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 08:15:59] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'catch' (T_CATCH) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 140' in /home/felipillo/public_html/test1/app/controllers/UserController.php:140
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 08:22:17] log.ERROR: exception 'ErrorException' with message 'Warning: file_put_contents(/home/felipillo/public_html/test1/bootstrap/../app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1): failed to open stream: Permission denied in /home/felipillo/public_html/test1/bootstrap/compiled.php line 5409' in /home/felipillo/public_html/test1/bootstrap/compiled.php:5409
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'file_put_conten...', '/home/felipillo...', 5409, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(5409): file_put_contents('/home/felipillo...', '<section class=...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(65): Illuminate\Filesystem\Filesystem->put('/home/felipillo...', '<section class=...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(40): Illuminate\View\Compilers\BladeCompiler->compile('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#6 /home/felipillo/public_html/test1/app/storage/views/7cb83db80f0b8787b75ceb9c6626299a(12): Illuminate\View\View->render()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(15845): include('/home/felipillo...')
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/felipillo...', Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(16900): Illuminate\View\View->render()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getNuevo', Object(Illuminate\View\View))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getNuevo', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-04-10 08:22:22] log.ERROR: exception 'ErrorException' with message 'Warning: file_put_contents(/home/felipillo/public_html/test1/bootstrap/../app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1): failed to open stream: Permission denied in /home/felipillo/public_html/test1/bootstrap/compiled.php line 5409' in /home/felipillo/public_html/test1/bootstrap/compiled.php:5409
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'file_put_conten...', '/home/felipillo...', 5409, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(5409): file_put_contents('/home/felipillo...', '<section class=...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(65): Illuminate\Filesystem\Filesystem->put('/home/felipillo...', '<section class=...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(40): Illuminate\View\Compilers\BladeCompiler->compile('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#6 /home/felipillo/public_html/test1/app/storage/views/7cb83db80f0b8787b75ceb9c6626299a(12): Illuminate\View\View->render()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(15845): include('/home/felipillo...')
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/felipillo...', Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(16900): Illuminate\View\View->render()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getNuevo', Object(Illuminate\View\View))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getNuevo', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-04-10 08:22:41] log.ERROR: exception 'ErrorException' with message 'Warning: file_put_contents(/home/felipillo/public_html/test1/bootstrap/../app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1): failed to open stream: Permission denied in /home/felipillo/public_html/test1/bootstrap/compiled.php line 5409' in /home/felipillo/public_html/test1/bootstrap/compiled.php:5409
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'file_put_conten...', '/home/felipillo...', 5409, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(5409): file_put_contents('/home/felipillo...', '<section class=...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(65): Illuminate\Filesystem\Filesystem->put('/home/felipillo...', '<section class=...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(40): Illuminate\View\Compilers\BladeCompiler->compile('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#6 /home/felipillo/public_html/test1/app/storage/views/7cb83db80f0b8787b75ceb9c6626299a(12): Illuminate\View\View->render()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(15845): include('/home/felipillo...')
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/felipillo...', Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(16900): Illuminate\View\View->render()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getNuevo', Object(Illuminate\View\View))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getNuevo', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-04-10 08:23:21] log.ERROR: exception 'ErrorException' with message 'Warning: file_put_contents(/home/felipillo/public_html/test1/bootstrap/../app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1): failed to open stream: Permission denied in /home/felipillo/public_html/test1/bootstrap/compiled.php line 5409' in /home/felipillo/public_html/test1/bootstrap/compiled.php:5409
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'file_put_conten...', '/home/felipillo...', 5409, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(5409): file_put_contents('/home/felipillo...', '<section class=...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(65): Illuminate\Filesystem\Filesystem->put('/home/felipillo...', '<section class=...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(40): Illuminate\View\Compilers\BladeCompiler->compile('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#6 /home/felipillo/public_html/test1/app/storage/views/7cb83db80f0b8787b75ceb9c6626299a(12): Illuminate\View\View->render()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(15845): include('/home/felipillo...')
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/felipillo...', Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(16900): Illuminate\View\View->render()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getNuevo', Object(Illuminate\View\View))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getNuevo', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-04-10 08:23:25] log.ERROR: exception 'ErrorException' with message 'Warning: file_put_contents(/home/felipillo/public_html/test1/bootstrap/../app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1): failed to open stream: Permission denied in /home/felipillo/public_html/test1/bootstrap/compiled.php line 5409' in /home/felipillo/public_html/test1/bootstrap/compiled.php:5409
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'file_put_conten...', '/home/felipillo...', 5409, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(5409): file_put_contents('/home/felipillo...', '<section class=...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(65): Illuminate\Filesystem\Filesystem->put('/home/felipillo...', '<section class=...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(40): Illuminate\View\Compilers\BladeCompiler->compile('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#6 /home/felipillo/public_html/test1/app/storage/views/de94abda4fdce5921ba2fec5168a70a5(16): Illuminate\View\View->render()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(15845): include('/home/felipillo...')
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/felipillo...', Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#11 /home/felipillo/public_html/test1/app/storage/views/d57b1bab901b5820e6fbf4506b4641fe(9): Illuminate\View\View->render()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(15845): include('/home/felipillo...')
+#13 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/felipillo...', Array)
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(15609): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(15592): Illuminate\View\View->getContents()
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(16900): Illuminate\View\View->render()
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(13303): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-04-10 08:43:16] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'user_id' in /home/felipillo/public_html/test1/bootstrap/compiled.php:8300
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(8261): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 /home/felipillo/public_html/test1/app/controllers/UserController.php(131): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 [internal function]: UserController->getActivacion('7', 'QT2I951dTRh71w2...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getActivacion', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getActivacion', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('7', 'QT2I951dTRh71w2...')
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-04-10 08:46:32] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in /home/felipillo/public_html/test1/app/models/RolUsuario.php line 4' in /home/felipillo/public_html/test1/app/models/RolUsuario.php:4
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 08:51:14] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 131' in /home/felipillo/public_html/test1/app/controllers/UserController.php:131
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 21:57:35] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::username()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('username', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->username()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('username', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->username()
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(9767): call_user_func_array(Array, Array)
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): Illuminate\Database\Eloquent\Model->__call('username', Array)
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->username()
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('username')
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'username', Object(Closure))
+#10 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#11 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): Illuminate\Database\Eloquent\Builder->get()
+#12 [internal function]: UserController->getTodos()
+#13 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-04-10 22:02:25] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::username()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('username', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->username()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('username', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->username()
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(9767): call_user_func_array(Array, Array)
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): Illuminate\Database\Eloquent\Model->__call('username', Array)
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(292): User->username()
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(261): Illuminate\Database\Eloquent\Builder->getRelation('username')
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(241): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'username', Object(Closure))
+#10 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(103): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#11 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): Illuminate\Database\Eloquent\Builder->get()
+#12 [internal function]: UserController->getTodos()
+#13 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-04-10 22:09:27] log.ERROR: exception 'ErrorException' with message 'Notice: Undefined offset: 0 in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php line 698' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:698
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(698): Symfony\Component\Debug\ErrorHandler->handle(8, 'Undefined offse...', '/home/felipillo...', 698, Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(665): Illuminate\Database\Query\Builder->addDynamic('_username', 'and', Array, 0)
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1365): Illuminate\Database\Query\Builder->dynamicWhere('where_username', Array)
+#3 [internal function]: Illuminate\Database\Query\Builder->__call('where_username', Array)
+#4 [internal function]: Illuminate\Database\Query\Builder->where_username()
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#6 [internal function]: Illuminate\Database\Eloquent\Builder->__call('where_username', Array)
+#7 [internal function]: Illuminate\Database\Eloquent\Builder->where_username()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(9767): call_user_func_array(Array, Array)
+#9 [internal function]: Illuminate\Database\Eloquent\Model->__call('where_username', Array)
+#10 [internal function]: User->where_username()
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(9779): call_user_func_array(Array, Array)
+#12 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): Illuminate\Database\Eloquent\Model::__callStatic('where_username', Array)
+#13 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): User::where_username()
+#14 [internal function]: UserController->getTodos()
+#15 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#16 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#25 {main} [] []
+[2013-04-10 22:10:41] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '_username' in 'where clause' (SQL: select * from `users` where `_username` is null) (Bindings: array (
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(96): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): Illuminate\Database\Eloquent\Builder->get()
+#6 [internal function]: UserController->getTodos()
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2013-04-10 22:11:13] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 165' in /home/felipillo/public_html/test1/app/controllers/UserController.php:165
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:11:46] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '_username' in 'where clause' (SQL: select * from `users` where `_username` is null) (Bindings: array (
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(207): Illuminate\Database\Query\Builder->get(Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(96): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#5 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): Illuminate\Database\Eloquent\Builder->get()
+#6 [internal function]: UserController->getTodos()
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2013-04-10 22:22:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Call to undefined method Illuminate\Database\Eloquent\Collection::get() in /home/felipillo/public_html/test1/app/controllers/UserController.php line 165' in /home/felipillo/public_html/test1/app/controllers/UserController.php:165
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:24:14] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Argument 1 passed to Illuminate\Database\Grammar::columnize() must be of the type array, string given, called in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php on line 108 and defined in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Grammar.php line 95' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Grammar.php:95
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Grammar.php(95): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Argument 1 pass...', '/home/felipillo...', 95, Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php(108): Illuminate\Database\Grammar->columnize('username')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php(63): Illuminate\Database\Query\Grammars\Grammar->compileColumns(Object(Illuminate\Database\Query\Builder), 'username')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php(41): Illuminate\Database\Query\Grammars\Grammar->compileComponents(Object(Illuminate\Database\Query\Builder))
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(823): Illuminate\Database\Query\Grammars\Grammar->compileSelect(Object(Illuminate\Database\Query\Builder))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Query\Builder->toSql()
+#6 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): Illuminate\Database\Query\Builder->get('username')
+#7 [internal function]: UserController->getTodos()
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-04-10 22:25:39] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Argument 1 passed to Illuminate\Database\Grammar::columnize() must be of the type array, string given, called in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php on line 108 and defined in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Grammar.php line 95' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Grammar.php:95
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Grammar.php(95): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Argument 1 pass...', '/home/felipillo...', 95, Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php(108): Illuminate\Database\Grammar->columnize('username')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php(63): Illuminate\Database\Query\Grammars\Grammar->compileColumns(Object(Illuminate\Database\Query\Builder), 'username')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php(41): Illuminate\Database\Query\Grammars\Grammar->compileComponents(Object(Illuminate\Database\Query\Builder))
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(823): Illuminate\Database\Query\Grammars\Grammar->compileSelect(Object(Illuminate\Database\Query\Builder))
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Query\Builder->toSql()
+#6 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): Illuminate\Database\Query\Builder->get('username')
+#7 [internal function]: UserController->getTodos()
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-04-10 22:28:34] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ''$username'' (T_CONSTANT_ENCAPSED_STRING) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 165' in /home/felipillo/public_html/test1/app/controllers/UserController.php:165
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:28:42] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ''$username'' (T_CONSTANT_ENCAPSED_STRING) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 165' in /home/felipillo/public_html/test1/app/controllers/UserController.php:165
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:29:35] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '$nick' (T_VARIABLE) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 165' in /home/felipillo/public_html/test1/app/controllers/UserController.php:165
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:29:41] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '$nick' (T_VARIABLE) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 165' in /home/felipillo/public_html/test1/app/controllers/UserController.php:165
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:30:18] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '$nick' (T_VARIABLE) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 165' in /home/felipillo/public_html/test1/app/controllers/UserController.php:165
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:33:42] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::username()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('username', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->username()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('username', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->username()
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(9767): call_user_func_array(Array, Array)
+#6 [internal function]: Illuminate\Database\Eloquent\Model->__call('username', Array)
+#7 [internal function]: User->username()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(9779): call_user_func_array(Array, Array)
+#9 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): Illuminate\Database\Eloquent\Model::__callStatic('username', Array)
+#10 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): User::username()
+#11 [internal function]: UserController->getTodos()
+#12 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#13 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#22 {main} [] []
+[2013-04-10 22:38:40] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::order_by()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('order_by', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->order_by('username', 'DESC')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/app/models/User.php(102): Illuminate\Database\Eloquent\Builder->__call('order_by', Array)
+#4 /home/felipillo/public_html/test1/app/models/User.php(102): Illuminate\Database\Eloquent\Builder->order_by('username', 'DESC')
+#5 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): User::username(NULL)
+#6 [internal function]: UserController->getTodos()
+#7 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2013-04-10 22:41:51] log.ERROR: exception 'ErrorException' with message 'Warning: Missing argument 1 for UserController::getTodos() in /home/felipillo/public_html/test1/app/controllers/UserController.php line 163' in /home/felipillo/public_html/test1/app/controllers/UserController.php:163
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UserController.php(163): Symfony\Component\Debug\ErrorHandler->handle(2, 'Missing argumen...', '/home/felipillo...', 163, Array)
+#1 [internal function]: UserController->getTodos()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-10 22:43:09] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Call to undefined method Illuminate\Database\Eloquent\Collection::pluck() in /home/felipillo/public_html/test1/app/controllers/UserController.php line 165' in /home/felipillo/public_html/test1/app/controllers/UserController.php:165
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:44:18] log.ERROR: exception 'ErrorException' with message 'Warning: Missing argument 1 for UserController::getTodos() in /home/felipillo/public_html/test1/app/controllers/UserController.php line 163' in /home/felipillo/public_html/test1/app/controllers/UserController.php:163
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UserController.php(163): Symfony\Component\Debug\ErrorHandler->handle(2, 'Missing argumen...', '/home/felipillo...', 163, Array)
+#1 [internal function]: UserController->getTodos()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-10 22:44:23] log.ERROR: exception 'ErrorException' with message 'Warning: Missing argument 1 for User::username(), called in /home/felipillo/public_html/test1/app/controllers/UserController.php on line 165 and defined in /home/felipillo/public_html/test1/app/models/User.php line 100' in /home/felipillo/public_html/test1/app/models/User.php:100
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/models/User.php(100): Symfony\Component\Debug\ErrorHandler->handle(2, 'Missing argumen...', '/home/felipillo...', 100, Array)
+#1 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): User::username()
+#2 [internal function]: UserController->getTodos('felipillo')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('felipillo')
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-04-10 22:44:35] log.ERROR: exception 'ErrorException' with message 'Warning: Missing argument 1 for User::username(), called in /home/felipillo/public_html/test1/app/controllers/UserController.php on line 165 and defined in /home/felipillo/public_html/test1/app/models/User.php line 100' in /home/felipillo/public_html/test1/app/models/User.php:100
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/models/User.php(100): Symfony\Component\Debug\ErrorHandler->handle(2, 'Missing argumen...', '/home/felipillo...', 100, Array)
+#1 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): User::username()
+#2 [internal function]: UserController->getTodos('Maruquilla')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('Maruquilla')
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-04-10 22:45:07] log.ERROR: exception 'ErrorException' with message 'Warning: Missing argument 1 for User::username(), called in /home/felipillo/public_html/test1/app/controllers/UserController.php on line 165 and defined in /home/felipillo/public_html/test1/app/models/User.php line 100' in /home/felipillo/public_html/test1/app/models/User.php:100
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/models/User.php(100): Symfony\Component\Debug\ErrorHandler->handle(2, 'Missing argumen...', '/home/felipillo...', 100, Array)
+#1 /home/felipillo/public_html/test1/app/controllers/UserController.php(165): User::username()
+#2 [internal function]: UserController->getTodos('felipillo')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getTodos', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('felipillo')
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-04-10 22:51:18] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/controllers/UserController.php line 175' in /home/felipillo/public_html/test1/app/controllers/UserController.php:175
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 22:51:34] log.ERROR: exception 'UnexpectedValueException' with message 'The Response content must be a string or object implementing __toString(), "boolean" given.' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16124
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(16902): Symfony\Component\HttpFoundation\Response->setContent(true)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(15932): Illuminate\Http\Response->setContent(true)
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(7392): Symfony\Component\HttpFoundation\Response->__construct(true)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(true, Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getTodos', true)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getTodos', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('felipillo')
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-04-10 23:11:56] log.ERROR: exception 'ErrorException' with message 'Warning: Missing argument 1 for UserController::getExiste() in /home/felipillo/public_html/test1/app/controllers/UserController.php line 163' in /home/felipillo/public_html/test1/app/controllers/UserController.php:163
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UserController.php(163): Symfony\Component\Debug\ErrorHandler->handle(2, 'Missing argumen...', '/home/felipillo...', 163, Array)
+#1 [internal function]: UserController->getExiste()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getExiste', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getExiste', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-10 23:36:27] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'public' (T_PUBLIC) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 179' in /home/felipillo/public_html/test1/app/controllers/UserController.php:179
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 23:37:16] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ':' in /home/felipillo/public_html/test1/app/controllers/UserController.php line 182' in /home/felipillo/public_html/test1/app/controllers/UserController.php:182
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 23:38:25] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Call to undefined function dd() in /home/felipillo/public_html/test1/app/controllers/UserController.php line 182' in /home/felipillo/public_html/test1/app/controllers/UserController.php:182
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-10 23:45:52] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::left_join()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/models/User.php(108): Illuminate\Database\Query\Builder->__call('left_join', Array)
+#1 /home/felipillo/public_html/test1/app/models/User.php(108): Illuminate\Database\Query\Builder->left_join('profiles', 'users.id', '=', 'profiles.user_i...')
+#2 /home/felipillo/public_html/test1/app/controllers/UserController.php(182): User::perfil()
+#3 [internal function]: UserController->getPerfil()
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getPerfil', Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getPerfil', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(7099): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []

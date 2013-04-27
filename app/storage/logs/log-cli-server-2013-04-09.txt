@@ -1,0 +1,280 @@
+[2013-04-09 00:15:31] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 00:48:21] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php line 23' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php:23
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 00:49:50] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php line 23' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php:23
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 00:50:09] log.ERROR: exception 'ReflectionException' with message 'Class UsuarioController does not exist' in /home/felipillo/public_html/test1/bootstrap/compiled.php:340
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(340): ReflectionClass->__construct('UsuarioControll...')
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(295): Illuminate\Container\Container->build('UsuarioControll...', Array)
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(872): Illuminate\Container\Container->make('UsuarioControll...', Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7058): Illuminate\Foundation\Application->make('UsuarioControll...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#12 {main} [] []
+[2013-04-09 00:50:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('nuevo', Array)
+#1 [internal function]: UsuarioController->nuevo()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('nuevo', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7059): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'nuevo', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#13 {main} [] []
+[2013-04-09 00:51:32] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant usuario - assumed 'usuario' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php line 22' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UsuarioController.php(22): Symfony\Component\HttpKernel\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 22, Array)
+#1 [internal function]: UsuarioController->getNuevo()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getNuevo', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7059): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getNuevo', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#13 {main} [] []
+[2013-04-09 00:51:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('Nuevo', Array)
+#1 [internal function]: UsuarioController->Nuevo()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('Nuevo', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7059): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'Nuevo', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#13 {main} [] []
+[2013-04-09 00:51:59] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('nuevo', Array)
+#1 [internal function]: UsuarioController->nuevo()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('nuevo', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7059): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'nuevo', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#13 {main} [] []
+[2013-04-09 00:52:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 00:53:32] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant usuario - assumed 'usuario' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php line 22' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UsuarioController.php(22): Symfony\Component\HttpKernel\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 22, Array)
+#1 [internal function]: UsuarioController->getNuevo()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getNuevo', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7059): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getNuevo', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#13 {main} [] []
+[2013-04-09 00:55:47] log.ERROR: exception 'ErrorException' with message 'Notice: Use of undefined constant usuario - assumed 'usuario' in /home/felipillo/public_html/test1/app/controllers/UserController.php line 22' in /home/felipillo/public_html/test1/app/controllers/UserController.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UserController.php(22): Symfony\Component\HttpKernel\Debug\ErrorHandler->handle(8, 'Use of undefine...', '/home/felipillo...', 22, Array)
+#1 [internal function]: UserController->getNuevo()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getNuevo', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7059): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getNuevo', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#13 {main} [] []
+[2013-04-09 02:08:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Error: Call to undefined function all() in /home/felipillo/public_html/test1/app/controllers/UserController.php line 32' in /home/felipillo/public_html/test1/app/controllers/UserController.php:32
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 06:21:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7388
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 06:22:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7388
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 06:22:48] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7388
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 06:40:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}', expecting catch (T_CATCH) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 98' in /home/felipillo/public_html/test1/app/controllers/UserController.php:98
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 06:47:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7388
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 06:48:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Error: Class 'Binput' not found in /home/felipillo/public_html/test1/app/controllers/UserController.php line 40' in /home/felipillo/public_html/test1/app/controllers/UserController.php:40
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 06:50:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 06:50:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 06:50:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 06:51:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-09 07:01:16] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.profile' doesn't exist (SQL: insert into `profile` (`birthday`, `country_id`, `sexo`, `estado_de_vida_id`, `biografia`, `user_id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => '1979-11-02',
+  1 => 'MX',
+  2 => 'M',
+  3 => '1',
+  4 => 'Chococrispis',
+  5 => 2,
+  6 => 
+  DateTime::__set_state(array(
+     'date' => '2013-04-09 07:01:16',
+     'timezone_type' => 3,
+     'timezone' => 'UTC',
+  )),
+  7 => 
+  DateTime::__set_state(array(
+     'date' => '2013-04-09 07:01:16',
+     'timezone_type' => 3,
+     'timezone' => 'UTC',
+  )),
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `pr...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(316): Illuminate\Database\Connection->run('insert into `pr...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(273): Illuminate\Database\Connection->statement('insert into `pr...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `pr...', Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1152): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pr...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(8854): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(8854): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(8792): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 /home/felipillo/public_html/test1/app/controllers/UserController.php(95): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: UserController->postNuevo()
+#12 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#13 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postNuevo', Array)
+#14 /home/felipillo/public_html/test1/bootstrap/compiled.php(7059): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postNuevo', Array)
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#16 /home/felipillo/public_html/test1/bootstrap/compiled.php(13320): call_user_func_array(Object(Closure), Array)
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(13299): Illuminate\Routing\Route->callCallable()
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#22 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#23 {main} [] []
+[2013-04-09 09:28:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []

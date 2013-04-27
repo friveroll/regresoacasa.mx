@@ -1,0 +1,35 @@
+[2013-04-17 03:46:17] log.ERROR: exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'avtar_file_name' cannot be null (SQL: insert into `profiles` (`birthday`, `country_id`, `sexo`, `estado_de_vida_id`, `biografia`, `avtar_file_name`, `user_id`) values (?, ?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => '1947-01-19',
+  1 => 'mx',
+  2 => 'F',
+  3 => '',
+  4 => 'Soy la meña
+',
+  5 => NULL,
+  6 => 8,
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `pr...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(316): Illuminate\Database\Connection->run('insert into `pr...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(273): Illuminate\Database\Connection->statement('insert into `pr...', Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `pr...', Array)
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1152): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pr...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(490): call_user_func_array(Array, Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(8959): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(8959): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(8943): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(8869): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /home/felipillo/public_html/test1/app/controllers/UserController.php(97): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: UserController->postNuevo()
+#13 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postNuevo', Array)
+#15 /home/felipillo/public_html/test1/bootstrap/compiled.php(7187): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postNuevo', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#18 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#19 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []

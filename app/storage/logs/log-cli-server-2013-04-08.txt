@@ -1,0 +1,129 @@
+[2013-04-08 03:43:31] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Class 'HTML' not found in /home/felipillo/public_html/test1/app/storage/views/d57b1bab901b5820e6fbf4506b4641fe line 5' in /home/felipillo/public_html/test1/app/storage/views/d57b1bab901b5820e6fbf4506b4641fe:5
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Exception/ExceptionServiceProvider.php(113): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-08 03:43:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1320
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Router.php(992): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Router.php(956): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(476): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(461): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 03:53:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Error: Call to undefined method Illuminate\Html\HtmlBuilder::style() in /home/felipillo/public_html/test1/bootstrap/compiled.php line 4288' in /home/felipillo/public_html/test1/bootstrap/compiled.php:4288
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-08 03:54:31] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Error: Call to undefined method Illuminate\Html\HtmlBuilder::style() in /home/felipillo/public_html/test1/bootstrap/compiled.php line 4288' in /home/felipillo/public_html/test1/bootstrap/compiled.php:4288
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-08 03:57:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Error: Call to undefined method Illuminate\Html\HtmlBuilder::style() in /home/felipillo/public_html/test1/bootstrap/compiled.php line 4288' in /home/felipillo/public_html/test1/bootstrap/compiled.php:4288
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-08 09:06:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 21:32:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 21:36:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 21:36:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 21:39:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 21:39:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 21:39:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 21:39:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7385
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []
+[2013-04-08 22:47:32] log.ERROR: exception 'InvalidArgumentException' with message 'View [notifications] not found.' in /home/felipillo/public_html/test1/bootstrap/compiled.php:13810
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(13764): Illuminate\View\FileViewFinder->findInPaths('notifications', Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(13991): Illuminate\View\FileViewFinder->find('notifications')
+#2 /home/felipillo/public_html/test1/app/storage/views/d57b1bab901b5820e6fbf4506b4641fe(18): Illuminate\View\Environment->make('notifications', Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(15821): include('/home/felipillo...')
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/felipillo...', Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(15585): Illuminate\View\Engines\CompilerEngine->get('/home/felipillo...', Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(15568): Illuminate\View\View->getContents()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(16876): Illuminate\View\View->render()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(15908): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(7372): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(13303): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/bootstrap/compiled.php(7079): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#12 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#15 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#16 {main} [] []
+[2013-04-08 23:57:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7388
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7102): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7078): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(947): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(935): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 /home/felipillo/public_html/test1/server.php(19): require_once('/home/felipillo...')
+#6 {main} [] []

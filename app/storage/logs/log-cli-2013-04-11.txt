@@ -1,0 +1,43 @@
+[2013-04-11 06:44:31] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "migration" namespace.
+
+Did you mean this?
+    migrate' in /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php:536
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(574): Symfony\Component\Console\Application->findNamespace('migration')
+#1 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(201): Symfony\Component\Console\Application->find('migration:make')
+#2 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/felipillo/public_html/test1/artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-04-11 06:48:37] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ',' in /home/felipillo/public_html/test1/app/database/migrations/2013_04_11_064445_add_names_to_users_table.php line 15' in /home/felipillo/public_html/test1/app/database/migrations/2013_04_11_064445_add_names_to_users_table.php:15
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4014): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-11 18:59:22] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "migration" namespace.
+
+Did you mean this?
+    migrate' in /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php:536
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(574): Symfony\Component\Console\Application->findNamespace('migration')
+#1 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(201): Symfony\Component\Console\Application->find('migration:make')
+#2 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/felipillo/public_html/test1/artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-04-11 18:59:29] log.ERROR: exception 'RuntimeException' with message 'Not enough arguments.' in /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Input/Input.php:76
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Command/Command.php(235): Symfony\Component\Console\Input\Input->validate()
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Console/Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(940): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(204): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /home/felipillo/public_html/test1/artisan(59): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2013-04-11 19:07:30] log.ERROR: exception 'RuntimeException' with message 'Not enough arguments.' in /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Input/Input.php:76
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Command/Command.php(235): Symfony\Component\Console\Input\Input->validate()
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Console/Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(940): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(204): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\GenerateSeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /home/felipillo/public_html/test1/artisan(59): Symfony\Component\Console\Application->run()
+#6 {main} [] []

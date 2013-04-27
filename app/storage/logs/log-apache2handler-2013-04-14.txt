@@ -1,0 +1,282 @@
+[2013-04-14 01:12:45] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'User' (T_STRING) in /home/felipillo/public_html/test1/app/routes.php line 22' in /home/felipillo/public_html/test1/app/routes.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:14:07] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ',' in /home/felipillo/public_html/test1/app/routes.php line 28' in /home/felipillo/public_html/test1/app/routes.php:28
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:14:36] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '$profiler' (T_VARIABLE) in /home/felipillo/public_html/test1/app/routes.php line 28' in /home/felipillo/public_html/test1/app/routes.php:28
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:14:50] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/routes.php line 29' in /home/felipillo/public_html/test1/app/routes.php:29
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:15:16] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ',' in /home/felipillo/public_html/test1/app/routes.php line 28' in /home/felipillo/public_html/test1/app/routes.php:28
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:15:28] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '$test' (T_VARIABLE) in /home/felipillo/public_html/test1/app/routes.php line 28' in /home/felipillo/public_html/test1/app/routes.php:28
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:16:49] log.ERROR: exception 'UnexpectedValueException' with message 'The Response content must be a string or object implementing __toString(), "array" given.' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16276
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(17054): Symfony\Component\HttpFoundation\Response->setContent(Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(16084): Illuminate\Http\Response->setContent(Array)
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(7500): Symfony\Component\HttpFoundation\Response->__construct(Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13455): Illuminate\Routing\Router->prepare(Array, Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-14 01:17:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';' in /home/felipillo/public_html/test1/app/routes.php line 28' in /home/felipillo/public_html/test1/app/routes.php:28
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:24:07] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'echo' (T_ECHO) in /home/felipillo/public_html/test1/app/routes.php line 29' in /home/felipillo/public_html/test1/app/routes.php:29
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:24:31] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'return' (T_RETURN) in /home/felipillo/public_html/test1/app/routes.php line 30' in /home/felipillo/public_html/test1/app/routes.php:30
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 01:53:50] log.ERROR: exception 'ErrorException' with message 'Notice: Undefined property: Illuminate\Database\Eloquent\Builder::$join in /home/felipillo/public_html/test1/app/routes.php line 29' in /home/felipillo/public_html/test1/app/routes.php:29
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(29): Symfony\Component\Debug\ErrorHandler->handle(8, 'Undefined prope...', '/home/felipillo...', 29, Array)
+#1 [internal function]: {closure}('felipillo')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-14 01:55:26] log.ERROR: exception 'ErrorException' with message 'Notice: Undefined property: Illuminate\Database\Query\Builder::$join in /home/felipillo/public_html/test1/app/routes.php line 30' in /home/felipillo/public_html/test1/app/routes.php:30
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(30): Symfony\Component\Debug\ErrorHandler->handle(8, 'Undefined prope...', '/home/felipillo...', 30, Array)
+#1 [internal function]: {closure}('felipillo')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-14 02:00:09] log.ERROR: exception 'UnexpectedValueException' with message 'The Response content must be a string or object implementing __toString(), "array" given.' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16276
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(17054): Symfony\Component\HttpFoundation\Response->setContent(Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(16084): Illuminate\Http\Response->setContent(Array)
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(7500): Symfony\Component\HttpFoundation\Response->__construct(Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13455): Illuminate\Routing\Router->prepare(Array, Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-14 02:03:39] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Object of class Illuminate\Database\Query\Builder could not be converted to string in /home/felipillo/public_html/test1/bootstrap/compiled.php line 16278' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16278
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(16278): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Object of class...', '/home/felipillo...', 16278, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(17054): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(16084): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7500): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13455): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-04-14 02:04:47] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '=' in /home/felipillo/public_html/test1/app/routes.php line 27' in /home/felipillo/public_html/test1/app/routes.php:27
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 02:08:07] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/routes.php line 39' in /home/felipillo/public_html/test1/app/routes.php:39
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 02:23:34] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/routes.php line 34' in /home/felipillo/public_html/test1/app/routes.php:34
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 02:24:56] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Object of class Illuminate\Database\Query\Builder could not be converted to string in /home/felipillo/public_html/test1/bootstrap/compiled.php line 16278' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16278
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(16278): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Object of class...', '/home/felipillo...', 16278, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(17054): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(16084): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7500): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13455): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-04-14 02:25:51] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause' (SQL: select * from `relationships` inner join `users` on `users`.`id` = `relationships`.`user_a` or `users`.`id` = `relationships`.`user_b` where `type` = ? and `accepted` = ? or `user_a` = ? or `user_b` = ?) (Bindings: array (
+  0 => 1,
+  1 => 1,
+  2 => '5',
+  3 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 /home/felipillo/public_html/test1/app/routes.php(34): Illuminate\Database\Query\Builder->get()
+#4 [internal function]: {closure}('felipillo')
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-04-14 02:28:38] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/routes.php line 34' in /home/felipillo/public_html/test1/app/routes.php:34
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4041): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-14 02:28:59] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause' (SQL: select * from `relationships` where `type` = ? and `accepted` = ? or `user_a` = ? or `user_b` = ?) (Bindings: array (
+  0 => 1,
+  1 => 1,
+  2 => '5',
+  3 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 /home/felipillo/public_html/test1/app/routes.php(34): Illuminate\Database\Query\Builder->get()
+#4 [internal function]: {closure}('felipillo')
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-04-14 02:30:38] log.ERROR: exception 'UnexpectedValueException' with message 'The Response content must be a string or object implementing __toString(), "array" given.' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16276
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(17054): Symfony\Component\HttpFoundation\Response->setContent(Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(16084): Illuminate\Http\Response->setContent(Array)
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(7500): Symfony\Component\HttpFoundation\Response->__construct(Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13455): Illuminate\Routing\Router->prepare(Array, Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-14 02:31:23] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Object of class Illuminate\Database\Query\Builder could not be converted to string in /home/felipillo/public_html/test1/bootstrap/compiled.php line 16278' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16278
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(16278): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Object of class...', '/home/felipillo...', 16278, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(17054): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(16084): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7500): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13455): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-04-14 02:31:58] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::toJson()' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:1369
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(34): Illuminate\Database\Query\Builder->__call('toJson', Array)
+#1 /home/felipillo/public_html/test1/app/routes.php(34): Illuminate\Database\Query\Builder->toJson()
+#2 [internal function]: {closure}('felipillo')
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-04-14 02:44:46] log.ERROR: exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`users`.`id` = `relationships`.`user_a` or `users`.`id` = `relationships`.`user_' at line 1 (SQL: select * from `relationships` inner join `users` on left `users`.`id` = `relationships`.`user_a` or `users`.`id` = `relationships`.`user_b` where `type_id` = ? and `accepted` = ? or `user_a` = ? or `user_b` = ?) (Bindings: array (
+  0 => 1,
+  1 => 1,
+  2 => '5',
+  3 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 /home/felipillo/public_html/test1/app/routes.php(34): Illuminate\Database\Query\Builder->get()
+#4 [internal function]: {closure}('felipillo')
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-04-14 02:46:03] log.ERROR: exception 'ErrorException' with message 'Notice: Array to string conversion in /home/felipillo/public_html/test1/app/routes.php line 36' in /home/felipillo/public_html/test1/app/routes.php:36
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(36): Symfony\Component\Debug\ErrorHandler->handle(8, 'Array to string...', '/home/felipillo...', 36, Array)
+#1 [internal function]: {closure}('felipillo')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-14 03:03:20] log.ERROR: exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'relationship_types.id `` left join `users` on `users`.`id` = `relationships`.`us' at line 1 (SQL: select `username`, `user_a`, `user_b`, `accepted`, `type_id`, `name` from `relationships` inner join `relationship_types` on `type_id` relationship_types.id `` left join `users` on `users`.`id` = `relationships`.`user_a` or `users`.`id` = `relationships`.`user_b` where `type_id` = ? and `accepted` = ? or `user_a` = ? or `user_b` = ?) (Bindings: array (
+  0 => 1,
+  1 => 1,
+  2 => '5',
+  3 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `usernam...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `usernam...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `usernam...', Array)
+#3 /home/felipillo/public_html/test1/app/routes.php(35): Illuminate\Database\Query\Builder->get(Array)
+#4 [internal function]: {closure}('felipillo')
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-04-14 03:04:20] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' (SQL: select `username`, `user_a`, `user_b`, `accepted`, `type_id`, `name` from `relationships` left join `users` on `users`.`id` = `relationships`.`user_a` or `users`.`id` = `relationships`.`user_b` where `type_id` = ? and `accepted` = ? and `user_a` = ? or `user_b` = ?) (Bindings: array (
+  0 => 1,
+  1 => 1,
+  2 => '5',
+  3 => '5',
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `usernam...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(261): Illuminate\Database\Connection->run('select `usernam...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(880): Illuminate\Database\Connection->select('select `usernam...', Array)
+#3 /home/felipillo/public_html/test1/app/routes.php(35): Illuminate\Database\Query\Builder->get(Array)
+#4 [internal function]: {closure}('felipillo')
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13472): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13451): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7207): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-04-14 03:37:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7513
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7230): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7206): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(968): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(956): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

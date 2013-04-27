@@ -1,0 +1,250 @@
+[2013-04-12 00:00:20] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ':', expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/43f4b2f286bf94a484b134724da9254e line 12' in /home/felipillo/public_html/test1/app/storage/views/43f4b2f286bf94a484b134724da9254e:12
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 00:00:56] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ':', expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/43f4b2f286bf94a484b134724da9254e line 12' in /home/felipillo/public_html/test1/app/storage/views/43f4b2f286bf94a484b134724da9254e:12
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 00:01:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ':', expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/43f4b2f286bf94a484b134724da9254e line 12' in /home/felipillo/public_html/test1/app/storage/views/43f4b2f286bf94a484b134724da9254e:12
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 01:27:55] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7163): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13445): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13424): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-04-12 01:28:13] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Using $this when not in object context in /home/felipillo/public_html/test1/app/models/User.php line 45' in /home/felipillo/public_html/test1/app/models/User.php:45
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 01:30:35] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '.' in /home/felipillo/public_html/test1/app/models/User.php line 45' in /home/felipillo/public_html/test1/app/models/User.php:45
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 01:31:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '.' in /home/felipillo/public_html/test1/app/models/User.php line 45' in /home/felipillo/public_html/test1/app/models/User.php:45
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 01:31:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '.' in /home/felipillo/public_html/test1/app/models/User.php line 45' in /home/felipillo/public_html/test1/app/models/User.php:45
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 01:32:27] log.ERROR: exception 'ErrorException' with message 'Runtime Notice: Non-static method User::getName() should not be called statically, assuming $this from incompatible context in /home/felipillo/public_html/test1/app/controllers/UserController.php line 199' in /home/felipillo/public_html/test1/app/controllers/UserController.php:199
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/controllers/UserController.php(199): Symfony\Component\Debug\ErrorHandler->handle(2048, 'Non-static meth...', '/home/felipillo...', 199, Array)
+#1 [internal function]: UserController->postEntrar()
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postEntrar', Array)
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7163): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postEntrar', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13445): call_user_func_array(Object(Closure), Array)
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(13424): Illuminate\Routing\Route->callCallable()
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-04-12 07:24:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7163): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(13445): call_user_func_array(Object(Closure), Array)
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(13424): Illuminate\Routing\Route->callCallable()
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-04-12 07:30:31] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1 line 22' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 07:31:04] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'Auth' (T_STRING), expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1 line 22' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 07:31:08] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'Auth' (T_STRING), expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1 line 22' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 07:33:21] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected 'Auth' (T_STRING), expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1 line 22' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 07:36:43] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ')', expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1 line 22' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 07:39:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ')', expecting ',' or ';' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1 line 22' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 07:42:30] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Undefined class constant 'check' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1 line 21' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1:21
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 07:42:40] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Undefined class constant 'check' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1 line 21' in /home/felipillo/public_html/test1/app/storage/views/ab7e1afd3bd877d421d6c2923e0aebb1:21
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 08:01:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7489
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7206): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7182): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-12 08:05:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7489
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7206): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7182): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-12 08:06:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7489
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7206): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7182): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-12 16:45:32] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Object of class Illuminate\Database\Eloquent\Relations\HasOne could not be converted to string in /home/felipillo/public_html/test1/bootstrap/compiled.php line 16251' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16251
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(16251): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Object of class...', '/home/felipillo...', 16251, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(17027): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Eloquent\Relations\HasOne))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(16057): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Eloquent\Relations\HasOne))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7476): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Eloquent\Relations\HasOne))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13428): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Eloquent\Relations\HasOne), Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-04-12 16:48:19] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Object of class Illuminate\Database\Eloquent\Builder could not be converted to string in /home/felipillo/public_html/test1/bootstrap/compiled.php line 16251' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16251
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(16251): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Object of class...', '/home/felipillo...', 16251, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(17027): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Eloquent\Builder))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(16057): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Eloquent\Builder))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7476): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Eloquent\Builder))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13428): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Eloquent\Builder), Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-04-12 16:48:52] log.ERROR: exception 'ErrorException' with message 'Catchable Fatal Error: Object of class Illuminate\Database\Eloquent\Builder could not be converted to string in /home/felipillo/public_html/test1/bootstrap/compiled.php line 16251' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16251
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(16251): Symfony\Component\Debug\ErrorHandler->handle(4096, 'Object of class...', '/home/felipillo...', 16251, Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(17027): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Eloquent\Builder))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(16057): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Eloquent\Builder))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(7476): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Eloquent\Builder))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(13428): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Eloquent\Builder), Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-04-12 16:50:40] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Call to a member function get() on a non-object in /home/felipillo/public_html/test1/app/routes.php line 22' in /home/felipillo/public_html/test1/app/routes.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 16:50:53] log.ERROR: exception 'UnexpectedValueException' with message 'The Response content must be a string or object implementing __toString(), "array" given.' in /home/felipillo/public_html/test1/bootstrap/compiled.php:16249
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(17027): Symfony\Component\HttpFoundation\Response->setContent(Array)
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(16057): Illuminate\Http\Response->setContent(Array)
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(7476): Symfony\Component\HttpFoundation\Response->__construct(Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13428): Illuminate\Routing\Router->prepare(Array, Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-12 16:51:22] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Call to a member function toJson() on a non-object in /home/felipillo/public_html/test1/app/routes.php line 22' in /home/felipillo/public_html/test1/app/routes.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 16:51:41] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Call to a member function toJson() on a non-object in /home/felipillo/public_html/test1/app/routes.php line 22' in /home/felipillo/public_html/test1/app/routes.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4018): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-12 17:10:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/felipillo/public_html/test1/bootstrap/compiled.php:7489
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(7206): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(7182): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-04-12 17:10:52] log.ERROR: exception 'ErrorException' with message 'Notice: Undefined variable: username in /home/felipillo/public_html/test1/app/routes.php line 22' in /home/felipillo/public_html/test1/app/routes.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(22): Symfony\Component\Debug\ErrorHandler->handle(8, 'Undefined varia...', '/home/felipillo...', 22, Array)
+#1 [internal function]: {closure}('DejaVu')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(13445): call_user_func_array(Object(Closure), Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13424): Illuminate\Routing\Route->callCallable()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-12 17:11:06] log.ERROR: exception 'ErrorException' with message 'Notice: Undefined variable: username in /home/felipillo/public_html/test1/app/routes.php line 22' in /home/felipillo/public_html/test1/app/routes.php:22
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(22): Symfony\Component\Debug\ErrorHandler->handle(8, 'Undefined varia...', '/home/felipillo...', 22, Array)
+#1 [internal function]: {closure}('DejaVu')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(13445): call_user_func_array(Object(Closure), Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13424): Illuminate\Routing\Route->callCallable()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-12 17:11:57] log.ERROR: exception 'ErrorException' with message 'Warning: Missing argument 1 for {closure}() in /home/felipillo/public_html/test1/app/routes.php line 21' in /home/felipillo/public_html/test1/app/routes.php:21
+Stack trace:
+#0 /home/felipillo/public_html/test1/app/routes.php(21): Symfony\Component\Debug\ErrorHandler->handle(2, 'Missing argumen...', '/home/felipillo...', 21, Array)
+#1 [internal function]: {closure}()
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(13445): call_user_func_array(Object(Closure), Array)
+#3 /home/felipillo/public_html/test1/bootstrap/compiled.php(13424): Illuminate\Routing\Route->callCallable()
+#4 /home/felipillo/public_html/test1/bootstrap/compiled.php(7183): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(958): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/felipillo/public_html/test1/bootstrap/compiled.php(946): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/felipillo/public_html/test1/public/index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-04-12 23:49:51] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Error: Class 'From' not found in /home/felipillo/public_html/test1/app/storage/views/7cb83db80f0b8787b75ceb9c6626299a line 381' in /home/felipillo/public_html/test1/app/storage/views/7cb83db80f0b8787b75ceb9c6626299a:381
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4031): Symfony\Component\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []

@@ -1,0 +1,85 @@
+[2013-04-09 00:41:27] log.ERROR: exception 'ReflectionException' with message 'Class UsuarioController does not exist' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Inspector.php:29
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Inspector.php(29): ReflectionClass->__construct('UsuarioControll...')
+#1 /home/felipillo/public_html/test1/bootstrap/compiled.php(6510): Illuminate\Routing\Controllers\Inspector->getRoutable('UsuarioControll...', 'usuario')
+#2 /home/felipillo/public_html/test1/bootstrap/compiled.php(4290): Illuminate\Routing\Router->controller('usuario', 'UsuarioControll...')
+#3 /home/felipillo/public_html/test1/app/routes.php(19): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#4 /home/felipillo/public_html/test1/app/routes.php(19): Illuminate\Support\Facades\Route::controller('usuario', 'UsuarioControll...')
+#5 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Foundation/start.php(237): require('/home/felipillo...')
+#6 /home/felipillo/public_html/test1/bootstrap/start.php(59): require('/home/felipillo...')
+#7 /home/felipillo/public_html/test1/artisan(30): require_once('/home/felipillo...')
+#8 {main} [] []
+[2013-04-09 00:47:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '}' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php line 23' in /home/felipillo/public_html/test1/app/controllers/UsuarioController.php:23
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 05:55:35] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.profiles' doesn't exist (SQL: alter table `profiles` add `id` int unsigned not null auto_increment primary key, add `user_id` int unsigned not null, add `birthday` date not null, add `country_id` varchar(2) not null, add `sexo` enum('M', 'F') not null, add `estado_de_vida_id` int unsigned not null, add `biografia` text not null, add `avtar_file_name` varchar(255) not null, add `created_at` timestamp default 0 not null, add `updated_at` timestamp default 0 not null) (Bindings: array (
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'alter table `pr...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(316): Illuminate\Database\Connection->run('alter table `pr...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(56): Illuminate\Database\Connection->statement('alter table `pr...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(134): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(59): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(4290): Illuminate\Database\Schema\Builder->table('profiles', Object(Closure))
+#6 /home/felipillo/public_html/test1/app/database/migrations/2013_04_09_055343_add_profiles_table.php(24): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#7 /home/felipillo/public_html/test1/app/database/migrations/2013_04_09_055343_add_profiles_table.php(24): Illuminate\Support\Facades\Schema::table('profiles', Object(Closure))
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): AddProfilesTable->up()
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(113): Illuminate\Database\Migrations\Migrator->runUp('2013_04_09_0553...', 3, false)
+#10 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(84): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#11 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(67): Illuminate\Database\Migrations\Migrator->run('/home/felipillo...', false)
+#12 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Console/Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#13 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Command/Command.php(240): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Console/Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(193): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(106): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/felipillo/public_html/test1/artisan(59): Symfony\Component\Console\Application->run()
+#18 {main} [] []
+[2013-04-09 05:56:47] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.profiles' doesn't exist (SQL: alter table `profiles` add `id` int unsigned not null auto_increment primary key, add `user_id` int unsigned not null, add `birthday` date not null, add `country_id` varchar(2) not null, add `sexo` enum('M', 'F') not null, add `estado_de_vida_id` int unsigned not null, add `biografia` text not null, add `avtar_file_name` varchar(255) not null, add `created_at` timestamp default 0 not null, add `updated_at` timestamp default 0 not null) (Bindings: array (
+))' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php:494
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'alter table `pr...', Array)
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Connection.php(316): Illuminate\Database\Connection->run('alter table `pr...', Array, Object(Closure))
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(56): Illuminate\Database\Connection->statement('alter table `pr...')
+#3 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(134): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(59): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 /home/felipillo/public_html/test1/bootstrap/compiled.php(4290): Illuminate\Database\Schema\Builder->table('profiles', Object(Closure))
+#6 /home/felipillo/public_html/test1/app/database/migrations/2013_04_09_055343_add_profiles_table.php(24): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#7 /home/felipillo/public_html/test1/app/database/migrations/2013_04_09_055343_add_profiles_table.php(24): Illuminate\Support\Facades\Schema::table('profiles', Object(Closure))
+#8 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): AddProfilesTable->up()
+#9 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(113): Illuminate\Database\Migrations\Migrator->runUp('2013_04_09_0553...', 3, false)
+#10 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(84): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#11 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(67): Illuminate\Database\Migrations\Migrator->run('/home/felipillo...', false)
+#12 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Console/Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#13 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Command/Command.php(240): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Console/Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(193): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(106): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/felipillo/public_html/test1/artisan(59): Symfony\Component\Console\Application->run()
+#18 {main} [] []
+[2013-04-09 06:01:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Compile Error: Cannot redeclare class CreateProfilesTable in /home/felipillo/public_html/test1/app/database/migrations/2013_04_09_055343_add_profiles_table.php line 37' in /home/felipillo/public_html/test1/app/database/migrations/2013_04_09_055343_add_profiles_table.php:37
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 06:07:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected ''user_id'' (T_CONSTANT_ENCAPSED_STRING) in /home/felipillo/public_html/test1/app/database/migrations/2013_04_09_060536_add_foreign_to_user_id_from_profiles_table.php line 27' in /home/felipillo/public_html/test1/app/database/migrations/2013_04_09_060536_add_foreign_to_user_id_from_profiles_table.php:27
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 06:16:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '$input' (T_VARIABLE) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 39' in /home/felipillo/public_html/test1/app/controllers/UserController.php:39
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 06:18:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '$input' (T_VARIABLE) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 40' in /home/felipillo/public_html/test1/app/controllers/UserController.php:40
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []
+[2013-04-09 06:19:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\FatalErrorException' with message 'Parse: syntax error, unexpected '$this' (T_VARIABLE) in /home/felipillo/public_html/test1/app/controllers/UserController.php line 40' in /home/felipillo/public_html/test1/app/controllers/UserController.php:40
+Stack trace:
+#0 /home/felipillo/public_html/test1/bootstrap/compiled.php(4047): Symfony\Component\HttpKernel\Debug\ErrorHandler->handleFatal()
+#1 [internal function]: Illuminate\Exception\ExceptionServiceProvider->Illuminate\Exception\{closure}()
+#2 {main} [] []

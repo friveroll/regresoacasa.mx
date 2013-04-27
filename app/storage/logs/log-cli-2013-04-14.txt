@@ -1,0 +1,12 @@
+[2013-04-14 00:54:00] log.ERROR: exception 'InvalidArgumentException' with message 'Configuration not found.' in /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Foundation/ConfigPublisher.php:92
+Stack trace:
+#0 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Foundation/ConfigPublisher.php(73): Illuminate\Foundation\ConfigPublisher->getSource('loic-sharma/pro...', 'profiler', '/home/felipillo...')
+#1 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Foundation/Console/ConfigPublishCommand.php(59): Illuminate\Foundation\ConfigPublisher->publishPackage('loic-sharma/pro...')
+#2 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Console/Command.php(108): Illuminate\Foundation\Console\ConfigPublishCommand->fire()
+#3 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Command/Command.php(240): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /home/felipillo/public_html/test1/vendor/laravel/framework/src/Illuminate/Console/Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(940): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(204): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Foundation\Console\ConfigPublishCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /home/felipillo/public_html/test1/vendor/symfony/console/Symfony/Component/Console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /home/felipillo/public_html/test1/artisan(59): Symfony\Component\Console\Application->run()
+#9 {main} [] []
