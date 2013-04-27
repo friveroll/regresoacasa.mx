@@ -118,6 +118,7 @@ return array(
 		'Way\Generators\GeneratorsServiceProvider', // Generators
 		'Intervention\Image\ImageServiceProvider', // Image Handler
 		'Profiler\ProfilerServiceProvider', // Profiler
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider', // PhpStorm
 
 	),
 
