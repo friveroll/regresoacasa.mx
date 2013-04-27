@@ -904,7 +904,7 @@ namespace  {
 	 * @static
 	 * @param	string	$namespace An optional namespace name
 	 * @param	Boolean $asDom	Whether to return a DOM or an XML string
-	 * @return string|DOMDocument An XML string representing the Application
+	 * @return string|\DOMDocument An XML string representing the Application
 	 */
 	 public static function asXml($namespace = null, $asDom = false){
 		return self::$root->asXml($namespace, $asDom);
@@ -918,6 +918,19 @@ namespace  {
 	 */
 	 public static function getTerminalDimensions(){
 		return self::$root->getTerminalDimensions();
+	 }
+
+	/**
+	 * Returns the namespace part of the command name.
+	 * This method is not part of public API and should not be used directly.
+	 *
+	 * @static
+	 * @param	string $name	The full name of the command
+	 * @param	string $limit The maximum number of parts of the namespace
+	 * @return string The namespace of the command
+	 */
+	 public static function extractNamespace($name, $limit = null){
+		return self::$root->extractNamespace($name, $limit);
 	 }
 
  }
@@ -3880,6 +3893,17 @@ namespace  {
 	 */
 	 public static function isDirectory($directory){
 		return self::$root->isDirectory($directory);
+	 }
+
+	/**
+	 * Determine if the given path is writable.
+	 *
+	 * @static
+	 * @param	string	$path
+	 * @return bool
+	 */
+	 public static function isWritable($path){
+		return self::$root->isWritable($path);
 	 }
 
 	/**
@@ -7791,7 +7815,7 @@ namespace  {
 	 * @param	string|array	$data
 	 * @param	int	$status
 	 * @param	array	$headers
-	 * @return Symfony\Component\HttpFoundation\JsonResponse
+	 * @return Illuminate\Http\JsonResponse
 	 */
 	 public static function json($data = array(), $status = 200, $headers = array()){
 		return self::$root->json($data, $status, $headers);
@@ -8360,19 +8384,9 @@ namespace  {
 namespace  {
  class Schema extends Illuminate\Support\Facades\Schema{
 	/**
-	 * @var \Illuminate\Database\Schema\Builder $root
+	 * @var \Illuminate\Database\Schema\MySqlBuilder $root
 	 */
 	 static private $root;
-
-	/**
-	 * Create a new database Schema manager.
-	 *
-	 * @static
-	 * @param	\Illuminate\Database\Connection	$connection
-	 */
-	 public static function __construct($connection){
-		self::$root->__construct($connection);
-	 }
 
 	/**
 	 * Determine if the given table exists.
@@ -8383,6 +8397,16 @@ namespace  {
 	 */
 	 public static function hasTable($table){
 		return self::$root->hasTable($table);
+	 }
+
+	/**
+	 * Create a new database Schema manager.
+	 *
+	 * @static
+	 * @param	\Illuminate\Database\Connection	$connection
+	 */
+	 public static function __construct($connection){
+		self::$root->__construct($connection);
 	 }
 
 	/**
@@ -9653,6 +9677,649 @@ namespace  {
 	 */
 	 public static function getNames(){
 		return self::$root->getNames();
+	 }
+
+ }
+}
+
+namespace  {
+ class Image extends Intervention\Image\Facades\Image{
+	/**
+	 * @var \Intervention\Image\Image $root
+	 */
+	 static private $root;
+
+	/**
+	 * Create a new instance of Image class
+	 *
+	 * @static
+	 * @param	string	$source
+	 * @param	integer $width
+	 * @param	integer $height
+	 * @param	mixed	$bgcolor
+	 */
+	 public static function __construct($source = null, $width = null, $height = null, $bgcolor = null){
+		self::$root->__construct($source, $width, $height, $bgcolor);
+	 }
+
+	/**
+	 * Open a new image resource from image file
+	 *
+	 * @static
+	 * @param	mixed $source
+	 * @return Image
+	 */
+	 public static function make($source){
+		return self::$root->make($source);
+	 }
+
+	/**
+	 * Create a new empty image resource
+	 *
+	 * @static
+	 * @param	int	$width
+	 * @param	int	$height
+	 * @param	mixed $bgcolor
+	 * @return Image
+	 */
+	 public static function canvas($width, $height, $bgcolor = null){
+		return self::$root->canvas($width, $height, $bgcolor);
+	 }
+
+	/**
+	 * Create a new image resource with image data from string
+	 *
+	 * @static
+	 * @param	string $data
+	 * @return Image
+	 */
+	 public static function raw($string){
+		return self::$root->raw($string);
+	 }
+
+	/**
+	 * Create new cached image and run callback
+	 * (requires additional package intervention/imagecache)
+	 *
+	 * @static
+	 * @param	Closure $callback
+	 * @param	integer $lifetime
+	 * @param	boolean $returnObj
+	 * @return Image
+	 */
+	 public static function cache($callback = null, $lifetime = null, $returnObj = false){
+		return self::$root->cache($callback, $lifetime, $returnObj);
+	 }
+
+	/**
+	 * Open a new image resource from image file
+	 *
+	 * @static
+	 * @param	string $path
+	 * @return Image
+	 */
+	 public static function open($path){
+		return self::$root->open($path);
+	 }
+
+	/**
+	 * Resize current image based on given width/height
+	 * Width and height are optional, the not given parameter is calculated
+	 * based on the given. The ratio boolean decides whether the resizing
+	 * should keep the image ratio. You can also pass along a boolean to
+	 * prevent the image from being upsized.
+	 *
+	 * @static
+	 * @param	integer $width	The target width for the image
+	 * @param	integer $height The target height for the image
+	 * @param	boolean $ratio	Determines if the image ratio should be preserved
+	 * @param	boolean $upsize Determines whether the image can be upsized
+	 * @return Image
+	 */
+	 public static function resize($width = null, $height = null, $ratio = false, $upsize = true){
+		return self::$root->resize($width, $height, $ratio, $upsize);
+	 }
+
+	/**
+	 * Legacy method to support old resizing calls
+	 *
+	 * @static
+	 * @param	array	$dimensions
+	 * @return Image
+	 */
+	 public static function legacyResize($dimensions = array()){
+		return self::$root->legacyResize($dimensions);
+	 }
+
+	/**
+	 * Resize image canvas
+	 *
+	 * @static
+	 * @param	int	$width
+	 * @param	int	$height
+	 * @param	string	$anchor
+	 * @param	boolean $relative
+	 * @param	mixed	$bgcolor
+	 * @return Image
+	 */
+	 public static function resizeCanvas($width, $height, $anchor = null, $relative = false, $bgcolor = null){
+		return self::$root->resizeCanvas($width, $height, $anchor, $relative, $bgcolor);
+	 }
+
+	/**
+	 * Crop the current image
+	 *
+	 * @static
+	 * @param	integer $width
+	 * @param	integer $height
+	 * @param	integer $pos_x
+	 * @param	integer $pos_y
+	 * @return Image
+	 */
+	 public static function crop($width, $height, $pos_x = null, $pos_y = null){
+		return self::$root->crop($width, $height, $pos_x, $pos_y);
+	 }
+
+	/**
+	 * Cut out a detail of the image in given ratio and resize to output size
+	 *
+	 * @static
+	 * @param	integer	$width
+	 * @param	integer	$height
+	 * @return Image
+	 */
+	 public static function grab($width = null, $height = null){
+		return self::$root->grab($width, $height);
+	 }
+
+	/**
+	 * Legacy Method to support older grab calls
+	 *
+	 * @static
+	 * @param	array	$dimensions
+	 * @return Image
+	 */
+	 public static function legacyGrab($dimensions = array()){
+		return self::$root->legacyGrab($dimensions);
+	 }
+
+	/**
+	 * Mirror image horizontally or vertically
+	 *
+	 * @static
+	 * @param	mixed $mode
+	 * @return Image
+	 */
+	 public static function flip($mode = null){
+		return self::$root->flip($mode);
+	 }
+
+	/**
+	 * Insert another image on top of the current image
+	 *
+	 * @static
+	 * @param	mixed	$source
+	 * @param	integer $pos_x
+	 * @param	integer $pos_y
+	 * @param	string	$anchor
+	 * @return Image
+	 */
+	 public static function insert($source, $pos_x = 0, $pos_y = 0, $anchor = null){
+		return self::$root->insert($source, $pos_x, $pos_y, $anchor);
+	 }
+
+	/**
+	 * Set opacity of current image
+	 *
+	 * @static
+	 * @param	integer $transparency
+	 * @return Image
+	 */
+	 public static function opacity($transparency){
+		return self::$root->opacity($transparency);
+	 }
+
+	/**
+	 * Apply given image as alpha mask on current image
+	 *
+	 * @static
+	 * @param	mixed	$source
+	 * @param	boolean $mask_with_alpha
+	 * @return Image
+	 */
+	 public static function mask($source, $mask_with_alpha = false){
+		return self::$root->mask($source, $mask_with_alpha);
+	 }
+
+	/**
+	 * Rotate image with given angle
+	 *
+	 * @static
+	 * @param	float	$angle
+	 * @param	string	$color
+	 * @param	int	$ignore_transparent
+	 * @return Image
+	 */
+	 public static function rotate($angle = 0, $bgcolor = '#000000', $ignore_transparent = 0){
+		return self::$root->rotate($angle, $bgcolor, $ignore_transparent);
+	 }
+
+	/**
+	 * Fill image with given color or image source at position x,y
+	 *
+	 * @static
+	 * @param	mixed	$source
+	 * @param	integer $pos_x
+	 * @param	integer $pos_y
+	 * @return Image
+	 */
+	 public static function fill($source, $pos_x = 0, $pos_y = 0){
+		return self::$root->fill($source, $pos_x, $pos_y);
+	 }
+
+	/**
+	 * Set single pixel
+	 *
+	 * @static
+	 * @param	string	$color
+	 * @param	integer $pos_x
+	 * @param	integer $pos_y
+	 * @return Image
+	 */
+	 public static function pixel($color, $pos_x = 0, $pos_y = 0){
+		return self::$root->pixel($color, $pos_x, $pos_y);
+	 }
+
+	/**
+	 * Draw rectangle in current image starting at point 1 and ending at point 2
+	 *
+	 * @static
+	 * @param	string	$color
+	 * @param	integer $x1
+	 * @param	integer $y1
+	 * @param	integer $x2
+	 * @param	integer $y2
+	 * @param	boolean $filled
+	 * @return Image
+	 */
+	 public static function rectangle($color, $x1 = 0, $y1 = 0, $x2 = 10, $y2 = 10, $filled = true){
+		return self::$root->rectangle($color, $x1, $y1, $x2, $y2, $filled);
+	 }
+
+	/**
+	 * Draw a line in current image starting at point 1 and ending at point 2
+	 *
+	 * @static
+	 * @param	string	$color
+	 * @param	integer $x1
+	 * @param	integer $y1
+	 * @param	integer $x2
+	 * @param	integer $y2
+	 * @return Image
+	 */
+	 public static function line($color, $x1 = 0, $y1 = 0, $x2 = 10, $y2 = 10){
+		return self::$root->line($color, $x1, $y1, $x2, $y2);
+	 }
+
+	/**
+	 * Draw an ellipse centered at given coordinates.
+	 *
+	 * @static
+	 * @param	string	$color
+	 * @param	integer $pos_x
+	 * @param	integer $pos_y
+	 * @param	integer $width
+	 * @param	integer $height
+	 * @return Image
+	 */
+	 public static function ellipse($color, $pos_x = 0, $pos_y = 0, $width = 10, $height = 10, $filled = true){
+		return self::$root->ellipse($color, $pos_x, $pos_y, $width, $height, $filled);
+	 }
+
+	/**
+	 * Draw a circle centered at given coordinates
+	 *
+	 * @static
+	 * @param	string	$color
+	 * @param	integer $x
+	 * @param	integer $y
+	 * @param	integer $radius
+	 * @param	boolean $filled
+	 * @return Image
+	 */
+	 public static function circle($color, $x = 0, $y = 0, $radius = 10, $filled = true){
+		return self::$root->circle($color, $x, $y, $radius, $filled);
+	 }
+
+	/**
+	 * Write text in current image
+	 *
+	 * @static
+	 * @param	string	$text
+	 * @param	integer $pos_x
+	 * @param	integer $pos_y
+	 * @param	integer $angle
+	 * @param	integer $size
+	 * @param	string	$color
+	 * @param	string	$fontfile
+	 * @return Image
+	 */
+	 public static function text($text, $pos_x = 0, $pos_y = 0, $size = 16, $color = '000000', $angle = 0, $fontfile = null){
+		return self::$root->text($text, $pos_x, $pos_y, $size, $color, $angle, $fontfile);
+	 }
+
+	/**
+	 * Changes the brightness of the current image
+	 *
+	 * @static
+	 * @param	int $level [description]
+	 * @return Image
+	 */
+	 public static function brightness($level){
+		return self::$root->brightness($level);
+	 }
+
+	/**
+	 * Changes the contrast of the current image
+	 *
+	 * @static
+	 * @param	int $level
+	 * @return Image
+	 */
+	 public static function contrast($level){
+		return self::$root->contrast($level);
+	 }
+
+	/**
+	 * Pixelate current image
+	 *
+	 * @static
+	 * @param	integer $size
+	 * @param	boolean $advanced
+	 * @return Image
+	 */
+	 public static function pixelate($size = 10, $advanced = true){
+		return self::$root->pixelate($size, $advanced);
+	 }
+
+	/**
+	 * Turn current image into a greyscale verision
+	 *
+	 * @static
+	 * @return Image
+	 */
+	 public static function grayscale(){
+		return self::$root->grayscale();
+	 }
+
+	/**
+	 * Alias of greyscale
+	 *
+	 * @static
+	 * @return Image
+	 */
+	 public static function greyscale(){
+		return self::$root->greyscale();
+	 }
+
+	/**
+	 * Invert colors of current image
+	 *
+	 * @static
+	 * @return Image
+	 */
+	 public static function invert(){
+		return self::$root->invert();
+	 }
+
+	/**
+	 * Apply blur filter on the current image
+	 *
+	 * @static
+	 * @param	integer $amount
+	 * @return Image
+	 */
+	 public static function blur($amount = 1){
+		return self::$root->blur($amount);
+	 }
+
+	/**
+	 * Set a maximum number of colors for the current image
+	 *
+	 * @static
+	 * @param	integer $count
+	 * @param	mixed	$matte
+	 * @return Image
+	 */
+	 public static function limitColors($count = null, $matte = null){
+		return self::$root->limitColors($count, $matte);
+	 }
+
+	/**
+	 * Reset to original image resource
+	 *
+	 * @static
+	 */
+	 public static function reset(){
+		self::$root->reset();
+	 }
+
+	/**
+	 * Encode image in different formats
+	 *
+	 * @static
+	 * @param	string	$format
+	 * @param	integer $quality
+	 * @return string
+	 */
+	 public static function encode($format = null, $quality = 90){
+		return self::$root->encode($format, $quality);
+	 }
+
+	/**
+	 * Picks and formats color at position
+	 *
+	 * @static
+	 * @param	int $x
+	 * @param	int $y
+	 * @param	string $format
+	 * @return mixed
+	 */
+	 public static function pickColor($x, $y, $format = null){
+		return self::$root->pickColor($x, $y, $format);
+	 }
+
+	/**
+	 * Allocate color from given string
+	 *
+	 * @static
+	 * @param	string $value
+	 * @return int
+	 */
+	 public static function parseColor($value){
+		return self::$root->parseColor($value);
+	 }
+
+	/**
+	 * Save image in filesystem
+	 *
+	 * @static
+	 * @param	string	$path
+	 * @param	integer $quality
+	 * @return Image
+	 */
+	 public static function save($path = null, $quality = 90){
+		return self::$root->save($path, $quality);
+	 }
+
+	/**
+	 * Returns image stream
+	 *
+	 * @static
+	 * @return string
+	 */
+	 public static function __toString(){
+		return self::$root->__toString();
+	 }
+
+ }
+}
+
+namespace  {
+ class Profiler extends Profiler\Facades\Profiler{
+	/**
+	 * @var \Profiler\Profiler $root
+	 */
+	 static private $root;
+
+	/**
+	 * Register the logger and application start time.
+	 *
+	 * @static
+	 * @param	Psr\Logger\LoggerInterface $logger
+	 */
+	 public static function __construct($logger, $startTime = null, $on = true){
+		self::$root->__construct($logger, $startTime, $on);
+	 }
+
+	/**
+	 * Set the logger.
+	 *
+	 * @static
+	 * @param	Psr\Logger\LoggerInterface $logger
+	 */
+	 public static function setLogger($logger){
+		self::$root->setLogger($logger);
+	 }
+
+	/**
+	 * Enable the profiler.
+	 *
+	 * @static
+	 * @param	bool	$on
+	 */
+	 public static function enable($on = true){
+		self::$root->enable($on);
+	 }
+
+	/**
+	 * Disable the profiler.
+	 *
+	 * @static
+	 */
+	 public static function disable(){
+		self::$root->disable();
+	 }
+
+	/**
+	 * Check if profiler is enabled
+	 *
+	 * @static
+	 * @return boolean
+	 */
+	 public static function isEnabled(){
+		return self::$root->isEnabled();
+	 }
+
+	/**
+	 * Start a timer.
+	 *
+	 * @static
+	 * @return Profiler\Profiler
+	 */
+	 public static function startTimer($timer, $startTime = null){
+		return self::$root->startTimer($timer, $startTime);
+	 }
+
+	/**
+	 * End a timer.
+	 *
+	 * @static
+	 * @return Profiler\Profiler
+	 */
+	 public static function endTimer($timer, $endTime = null){
+		return self::$root->endTimer($timer, $endTime);
+	 }
+
+	/**
+	 * Get a timer.
+	 *
+	 * @static
+	 * @param	string	$timer
+	 * @return double
+	 */
+	 public static function getTimer($timer){
+		return self::$root->getTimer($timer);
+	 }
+
+	/**
+	 * Get all of the executed timers.
+	 *
+	 * @static
+	 * @return array
+	 */
+	 public static function getTimers(){
+		return self::$root->getTimers();
+	 }
+
+	/**
+	 * Get the current application execution time in milliseconds.
+	 *
+	 * @static
+	 * @return int
+	 */
+	 public static function getLoadTime(){
+		return self::$root->getLoadTime();
+	 }
+
+	/**
+	 * Get the current memory usage in a readable format.
+	 *
+	 * @static
+	 * @return string
+	 */
+	 public static function getMemoryUsage(){
+		return self::$root->getMemoryUsage();
+	 }
+
+	/**
+	 * Get the peak memory usage in a readable format.
+	 *
+	 * @static
+	 * @return string
+	 */
+	 public static function getMemoryPeak(){
+		return self::$root->getMemoryPeak();
+	 }
+
+	/**
+	 * Get all of the files that have been included.
+	 *
+	 * @static
+	 * @return array
+	 */
+	 public static function getIncludedFiles(){
+		return self::$root->getIncludedFiles();
+	 }
+
+	/**
+	 * Render the profiler.
+	 *
+	 * @static
+	 * @return string
+	 */
+	 public static function render(){
+		return self::$root->render();
+	 }
+
+	/**
+	 * Render the profiler.
+	 *
+	 * @static
+	 * @return string
+	 */
+	 public static function __toString(){
+		return self::$root->__toString();
 	 }
 
  }
